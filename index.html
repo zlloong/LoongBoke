@@ -7,7 +7,6 @@
 <meta name="generator" content="Hexo 4.0.0">
   <link rel="apple-touch-icon" sizes="180x180" href="/LoongBoke/images/apple-touch-icon-next.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/LoongBoke/images/favicon-32x32-next.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/LoongBoke/images/favicon-16x16-next.png">
   <link rel="mask-icon" href="/LoongBoke/images/logo.svg" color="#222">
 
 <link rel="stylesheet" href="/LoongBoke/css/main.css">
@@ -21,7 +20,7 @@
   var CONFIG = {
     hostname: new URL('https://zlloong.github.io').hostname,
     root: '/LoongBoke/',
-    scheme: 'Muse',
+    scheme: 'Mist',
     version: '7.6.0',
     exturl: false,
     sidebar: {"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},
@@ -134,6 +133,21 @@
     <a href="/LoongBoke/" rel="section"><i class="fa fa-fw fa-home"></i>Home</a>
 
   </li>
+        <li class="menu-item menu-item-bout">
+
+    <a href="/LoongBoke/about/" rel="section"><i class="fa fa-fw fa-user"></i>bout</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/LoongBoke/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>Tags</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/LoongBoke/categories/" rel="section"><i class="fa fa-fw fa-th"></i>Categories</a>
+
+  </li>
         <li class="menu-item menu-item-archives">
 
     <a href="/LoongBoke/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archives</a>
@@ -165,6 +179,140 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://zlloong.github.io/2019/12/03/python-%E8%A3%85%E9%A5%B0%E5%99%A8/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/LoongBoke/images/avatar.gif">
+      <meta itemprop="name" content="张二毛">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="张二毛的个人博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/LoongBoke/2019/12/03/python-%E8%A3%85%E9%A5%B0%E5%99%A8/" class="post-title-link" itemprop="url">python 装饰器</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2019-12-03 21:22:58 / Modified: 21:28:00" itemprop="dateCreated datePublished" datetime="2019-12-03T21:22:58+08:00">2019-12-03</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>装饰器就是对函数或者方法或者类进行修饰 意图：动态地给一个对象添加一些额外的职责。就增加功能来说，装饰器模式相比生成子类更为灵活。 主要解决：一般的，我们为了扩展一个类经常使用继承方式实现，由于继承为类引入静态特征，并且随着扩展功能的增多，子类会很膨胀。</p>
+<h3 id="装饰器特点"><a href="#装饰器特点" class="headerlink" title="装饰器特点"></a>装饰器特点</h3><p>Python函数与其他函数不同一点是 函数参数可以是函数<br>装饰器没有返回值</p>
+<h3 id="装饰器使用"><a href="#装饰器使用" class="headerlink" title="装饰器使用"></a>装饰器使用</h3><p>装饰器就是定义一个函数来装饰所@的函数<br>将函数当成参数传入 并且在装饰器调用 加上所装饰的方法</p>
+<h4 id="方法带惨装饰-方法返回值装饰"><a href="#方法带惨装饰-方法返回值装饰" class="headerlink" title="方法带惨装饰 方法返回值装饰"></a>方法带惨装饰 方法返回值装饰</h4><p>装饰器有外部函数和内部函数 所装饰函数有参数的时候 就在内部函数定义 <em>arg *</em>keay 外部函数参数只有一个<br>如果所装饰的函数有返回值 那么 在内部函数中 接收该返回值 并且return出去 外部函数 return内部函数</p>
+<h4 id="带参数的装饰器"><a href="#带参数的装饰器" class="headerlink" title="带参数的装饰器"></a>带参数的装饰器</h4><p>在定义有参数的外部函数来接受 @装饰器函数  返回@description<br>返回值 是接收函数的那个参数 相当于设置一个关卡 用if判断  返回值仍然是 接收函数的<br>###装饰类<br>def <strong>call</strong>(self, func):<br>            # 将基本函数存入对象<br>            self.func = func</p>
+<pre><code># 返回inner函数
+return self.inner</code></pre><p>###然后在定义装饰器函数<br>self.func()<br>装饰类 同理 将类传入 进行实例化<br>多个装饰器 从下到上</p>
+<p>装饰器 多重函数嵌套<br>返回值都是函数为参数的<br>三个函数 是装饰器判断使用哪个方法装饰  俩个函数<br>三个类 俩个类</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://zlloong.github.io/2019/12/03/deepin%E4%B8%8B%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/LoongBoke/images/avatar.gif">
+      <meta itemprop="name" content="张二毛">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="张二毛的个人博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/LoongBoke/2019/12/03/deepin%E4%B8%8B%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" class="post-title-link" itemprop="url">deepin下搭建博客</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2019-12-03 20:02:14" itemprop="dateCreated datePublished" datetime="2019-12-03T20:02:14+08:00">2019-12-03</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <hr>
+<p>title: deepin下搭建博客<br>date: 2019-12-03 19:44:16<br>tags:</p>
+<hr>
+<p>在github下构建仓库利用note hexo框架搭建个人博客</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/LoongBoke/2019/12/03/deepin%E4%B8%8B%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
     <link itemprop="mainEntityOfPage" href="https://zlloong.github.io/2019/12/03/git%E5%91%BD%E4%BB%A4/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -190,7 +338,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2019-12-03 13:28:36 / Modified: 13:46:43" itemprop="dateCreated datePublished" datetime="2019-12-03T13:28:36+08:00">2019-12-03</time>
+              <time title="Created: 2019-12-03 13:28:36 / Modified: 19:08:12" itemprop="dateCreated datePublished" datetime="2019-12-03T13:28:36+08:00">2019-12-03</time>
             </span>
 
           
@@ -204,12 +352,15 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>git配置<br>–more–</p>
-<p>git config –global user.name “”<br>git config –global user.email””<br>git config –list 查看<br>建立一个文件夹<br>git init 初始化在当前文件夹<br>git remote add origin 仓库链接 打开<br>git clone 厂库链接 克隆<br>git add 添加当前本地<br>git status 查看有无更更改<br>git commit -m “修改元素” 提交更改<br>git push origin master 上传git</p>
-<p>所以，需要用git diff这个命令看看：</p>
-<p>知道了对readme.txt作了什么修改后，再把它提交到仓库就放心多了，提交修改和提交新文件是一样的两步，第一步是git add：</p>
-<p>版本控制系统肯定有某个命令可以告诉我们历史记录，在Git中，我们用git log命令查看：</p>
-
+          <p>git配置<br>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/LoongBoke/2019/12/03/git%E5%91%BD%E4%BB%A4/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -331,6 +482,8 @@
 
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="张二毛"
+      src="/LoongBoke/images/avatar.gif">
   <p class="site-author-name" itemprop="name">张二毛</p>
   <div class="site-description" itemprop="description"></div>
 </div>
@@ -339,14 +492,33 @@
       <div class="site-state-item site-state-posts">
           <a href="/LoongBoke/archives/">
         
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">4</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
   </nav>
 </div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/yourname" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;yourname" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/LoongBoke/1546349521@qq.com" title="E-Mail → 1546349521@qq.com"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+      </span>
+  </div>
 
 
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title">
+      <i class="fa fa-fw fa-link"></i>
+      推荐阅读
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="http://zhihu.com/" title="http:&#x2F;&#x2F;zhihu.com" rel="noopener" target="_blank">B乎</a>
+        </li>
+    </ul>
+  </div>
 
       </div>
 
@@ -374,7 +546,7 @@
   <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> v4.0.0
   </div>
   <span class="post-meta-divider">|</span>
-  <div class="theme-info">Theme – <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v7.6.0
+  <div class="theme-info">Theme – <a href="https://mist.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> v7.6.0
   </div>
 
         
