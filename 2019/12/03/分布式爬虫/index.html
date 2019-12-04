@@ -53,7 +53,7 @@
 <meta property="og:site_name" content="张二毛的个人博客">
 <meta property="og:description" content="srapy框架">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-12-04T02:55:19.787Z">
+<meta property="og:updated_time" content="2019-12-04T11:26:47.176Z">
 <meta name="twitter:card" content="summary">
 
 <link rel="canonical" href="https://zlloong.github.io/2019/12/03/%E5%88%86%E5%B8%83%E5%BC%8F%E7%88%AC%E8%99%AB/">
@@ -215,7 +215,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2019-12-04 10:55:19" itemprop="dateModified" datetime="2019-12-04T10:55:19+08:00">2019-12-04</time>
+                <time title="Modified: 2019-12-04 19:26:47" itemprop="dateModified" datetime="2019-12-04T19:26:47+08:00">2019-12-04</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -245,8 +245,8 @@
 
 
 
-<p>###原理<br>分布式爬虫 就是利于一个主机 redis<br>和多个从机来进行爬取<br>首先 从机开启任务模式 python run.py china<br>主机在根据redis 创建列表键的方法<br>从机进行爬取 ,redis 有去重的功能</p>
-<p>###代码<br>项目的主配置信息 scrapy.cfg 用来分布式处理服务器<br>scrapy 文件夹 写规则  items.py 写数据处理模板、middlewares 中间件、pipelines 管道用来永久化持久化储存 setting 设置配置文件<br>scrapy<br> scrawl 运行</p>
+<h3 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h3><p>分布式爬虫 就是利于一个主机 redis<br>和多个从机来进行爬取<br>首先 从机开启任务模式 python run.py china<br>主机在根据redis 创建列表键的方法<br>从机进行爬取 ,redis 有去重的功能</p>
+<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><p>项目的主配置信息 scrapy.cfg 用来分布式处理服务器<br>scrapy 文件夹 写规则  items.py 写数据处理模板、middlewares 中间件、pipelines 管道用来永久化持久化储存 setting 设置配置文件<br>scrapy<br> scrawl 运行</p>
 <p>scrapy startproject yuehui<br>cd yuehui</p>
 <p>scrapy genspider yuehui163 “<a href="http://yueh" target="_blank" rel="noopener">http://yueh</a><br>scrapy crawl yuehui163 -s JOBDIR=job_info/001<br>python run.py china</p>
 
@@ -268,8 +268,8 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2019/12/03/deepin%E4%B8%8B%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" rel="prev" title="deepin下搭建博客">
-      <i class="fa fa-chevron-left"></i> deepin下搭建博客
+    <a href="/2019/12/03/python-%E8%A3%85%E9%A5%B0%E5%99%A8/" rel="prev" title="python 装饰器">
+      <i class="fa fa-chevron-left"></i> python 装饰器
     </a></div>
       <div class="post-nav-item">
     <a href="/2019/12/04/Django%E6%A1%86%E6%9E%B6/" rel="next" title="Django框架">
@@ -312,6 +312,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#原理"><span class="nav-number">1.</span> <span class="nav-text">原理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#代码"><span class="nav-number">2.</span> <span class="nav-text">代码</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
