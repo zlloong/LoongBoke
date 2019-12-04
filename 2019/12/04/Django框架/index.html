@@ -45,18 +45,18 @@
   };
 </script>
 
-  <meta name="description" content="哈哈哈哈哈哈哈哈哈">
-<meta name="keywords" content="前端,JavaScript,Python,爬虫,deepin,数据分析,数据结构">
-<meta property="og:type" content="website">
-<meta property="og:title" content="about">
-<meta property="og:url" content="https:&#x2F;&#x2F;zlloong.github.io&#x2F;about&#x2F;index.html">
+  <meta name="description" content="Django是Python下web开发框架">
+<meta name="keywords" content="python,web开发,框架">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Django框架">
+<meta property="og:url" content="https:&#x2F;&#x2F;zlloong.github.io&#x2F;2019&#x2F;12&#x2F;04&#x2F;Django%E6%A1%86%E6%9E%B6&#x2F;index.html">
 <meta property="og:site_name" content="张二毛的个人博客">
-<meta property="og:description" content="哈哈哈哈哈哈哈哈哈">
+<meta property="og:description" content="Django是Python下web开发框架">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-12-03T14:18:04.792Z">
+<meta property="og:updated_time" content="2019-12-04T11:02:53.685Z">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://zlloong.github.io/about/">
+<link rel="canonical" href="https://zlloong.github.io/2019/12/04/Django%E6%A1%86%E6%9E%B6/">
 
 
 <script id="page-configurations">
@@ -64,14 +64,13 @@
   CONFIG.page = {
     sidebar: "",
     isHome: false,
-    isPost: false,
-    isPage: true,
+    isPost: true,
+    isPage: false,
     isArchive: false
   };
 </script>
 
-  <title>about | 张二毛的个人博客
-  </title>
+  <title>Django框架 | 张二毛的个人博客</title>
   
 
 
@@ -177,45 +176,110 @@
       <div class="main-inner">
         <div class="content-wrap">
           
-  
-  
 
           <div class="content">
             
 
   <div class="posts-expand">
-    
-    
-    
-    <div class="post-block" lang="zh-Hans">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="https://zlloong.github.io/2019/12/04/Django%E6%A1%86%E6%9E%B6/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/zifeng.jpg">
+      <meta itemprop="name" content="张二毛">
+      <meta itemprop="description" content="这是一个博客">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="张二毛的个人博客">
+    </span>
       <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Django框架
+        </h1>
 
-<h1 class="post-title" itemprop="name headline">about
-</h1>
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
 
-<div class="post-meta">
+              <time title="Created: 2019-12-04 18:51:14 / Modified: 19:02:53" itemprop="dateCreated datePublished" datetime="2019-12-04T18:51:14+08:00">2019-12-04</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%A1%86%E6%9E%B6/" itemprop="url" rel="index">
+                    <span itemprop="name">框架</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>Django是Python下web开发框架</p>
+<a id="more"></a>
+<p>###安装<br>在deepin上安装命令 apt-install Django<br>选择在Pycham上开发在新建Django文件新建文件将选择第二个创建,最后一个admin勾打上<br>新建完成出现一系列文件表示成功<br>###使用<br>####bug<br>1.出现数据库BUG选择将注释那个 if判断 因为是Python3 2 导向失败<br>因为Linux上 Python默认Python2 所以选择命令是Python3</p>
+<p>###配置命令</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">DATABASES = &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">    <span class="string">'default'</span>: &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">        <span class="string">'ENGINE'</span>: <span class="string">'django.db.backends.mysql'</span>,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">        <span class="string">'NAME'</span>: <span class="string">"myserver"</span>,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">        <span class="string">"USER"</span>: <span class="string">"zl"</span>,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">        <span class="string">"PASSWORD"</span>:<span class="string">"123456"</span>,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">        <span class="string">"HOST"</span>:<span class="string">"127.0.0.1"</span>,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">        <span class="string">"port"</span>:<span class="string">"3306"</span>,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">    &#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure>
+
+<pre><code class="bash">LANGUAGE_CODE = <span class="string">'zh-hans'</span><span class="comment">#编码</span>
+TIME_ZONE = <span class="string">'Asia/Shanghai'</span>
+STATIC_URL = <span class="string">'/static/'</span><span class="comment">#配置默认静态文件</span>
+如过css找不到
+STATICFILES_DIRS = (os.path.join(BASE_DIR,<span class="string">"static"</span>),)<span class="comment">#获得地址</span></code></pre>
+<p>####数据库迁移</p>
+<pre><code class="bash">python3 manage.py makemigrations
+python3 manage.py migrate</code></pre>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/python/" rel="tag"># python</a>
+              <a href="/tags/web%E5%BC%80%E5%8F%91/" rel="tag"># web开发</a>
+              <a href="/tags/%E6%A1%86%E6%9E%B6/" rel="tag"># 框架</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2019/12/03/%E5%88%86%E5%B8%83%E5%BC%8F%E7%88%AC%E8%99%AB/" rel="prev" title="分布式爬虫">
+      <i class="fa fa-chevron-left"></i> 分布式爬虫
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
   
 
-</div>
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
-          <p>哈哈哈哈哈哈哈哈哈 </p>
-
-      </div>
-      
-      
-      
-    </div>
-    
-
-    
-    
-    
   </div>
 
 
