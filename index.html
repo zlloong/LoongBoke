@@ -184,6 +184,244 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="https://zlloong.github.io/2019/12/05/Django%E6%A1%86%E6%9E%B6-%E4%BA%8C/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/zifeng.jpg">
+      <meta itemprop="name" content="张二毛">
+      <meta itemprop="description" content="这是一个博客">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="张二毛的个人博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/12/05/Django%E6%A1%86%E6%9E%B6-%E4%BA%8C/" class="post-title-link" itemprop="url">Django框架(二)</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2019-12-05 21:38:10 / Modified: 21:39:33" itemprop="dateCreated datePublished" datetime="2019-12-05T21:38:10+08:00">2019-12-05</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Djang/" itemprop="url" rel="index">
+                    <span itemprop="name">Djang</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>前后端数据交互</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2019/12/05/Django%E6%A1%86%E6%9E%B6-%E4%BA%8C/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="https://zlloong.github.io/2019/12/05/python%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1-%E4%BA%8C/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/zifeng.jpg">
+      <meta itemprop="name" content="张二毛">
+      <meta itemprop="description" content="这是一个博客">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="张二毛的个人博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/12/05/python%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1-%E4%BA%8C/" class="post-title-link" itemprop="url">python面向对象(二)</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2019-12-05 21:12:38 / Modified: 21:44:54" itemprop="dateCreated datePublished" datetime="2019-12-05T21:12:38+08:00">2019-12-05</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/python/" itemprop="url" rel="index">
+                    <span itemprop="name">python</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>具有抽象方法的类就是抽象类。<br>abc abstract class 抽象类的缩写  使用抽象类必须使用abc抽象模块</p>
+<h3 id="绑定类的方法，静态方法-类方法"><a href="#绑定类的方法，静态方法-类方法" class="headerlink" title="绑定类的方法，静态方法,类方法"></a>绑定类的方法，静态方法,类方法</h3><p>@staticmethod #可以省略不写<br>@classmethod #必须写<br>调用非绑定类的方法(对象/实例方法)<br>    tw = Person()<br>    tw.say()<br>绑定类的方法，静态方法<br>    Person.walk()<br>调用类方法<br>    Person.drink()</p>
+<p>总结:调用非绑定类是先实例化在调用,绑定类静态方法是直接调用 调用类方法也一样</p>
+<h3 id="抽象类"><a href="#抽象类" class="headerlink" title="抽象类"></a>抽象类</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">接口 抽象类关键字 !! </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">定义一个抽象的实例方法&#x2F;非绑定类的方法</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">@abc.abstractmethod</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">定义一个抽象的类方法</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">@abc.abstractclassmethod</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">定义一个抽象的静态方法&#x2F;绑定类的方法</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">@abc.abstractstaticmethod</span></pre></td></tr></table></figure>
+
+<h3 id="魔术方法"><a href="#魔术方法" class="headerlink" title="魔术方法"></a>魔术方法</h3><p>魔术方法就是一个类/对象中的方法，和普通方法唯一的不同时，普通方法需要调用！而魔术方法是在特定时刻自动触发。<br>1.<strong>init</strong>  初始化调用<br>2.<strong>new</strong>   实例化调用<br>3.<strong>del</strong>   删除时候调用<br>3.<strong>call</strong>  调用时候用</p>
+<h3 id="描述符"><a href="#描述符" class="headerlink" title="描述符"></a>描述符</h3><p>python中的描述符是用于描述对象中的属性。主要作用就是对属性操作提供限制，验证，管理等相关权限的操作。</p>
+<p>get      获取属性的操作<br>set      设置属性的操作<br>delete   删除属性的操作<br>描述符相当于Java中的封装 get set 操作 来对变量进行封装</p>
+<h4 id="类内置属性"><a href="#类内置属性" class="headerlink" title="类内置属性"></a>类内置属性</h4><p><strong>dict</strong><br>获取当前类/对象成员组成的字典<br><strong>doc</strong><br>获取当前类/对象的文档，和函数一样使用’’’ 定义即可<br><strong>name</strong><br>类.<strong>name</strong>是获取当前类名,如果直接写<strong>name</strong>则是获取模块的名称<br><strong>bases</strong><br>获取类的继承列表中所有父类组成的元组</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="https://zlloong.github.io/2019/12/04/python%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/zifeng.jpg">
+      <meta itemprop="name" content="张二毛">
+      <meta itemprop="description" content="这是一个博客">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="张二毛的个人博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/12/04/python%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/" class="post-title-link" itemprop="url">python面向对象</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2019-12-04 21:15:21" itemprop="dateCreated datePublished" datetime="2019-12-04T21:15:21+08:00">2019-12-04</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2019-12-05 21:34:56" itemprop="dateModified" datetime="2019-12-05T21:34:56+08:00">2019-12-05</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/python/" itemprop="url" rel="index">
+                    <span itemprop="name">python</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>面向对象特点<br>内聚指模块的功能强度的度量，即一个模块内部各个元素彼此结合的紧密程度的度量。若一个模块内各元素（语名之间、程序段之间）联系的越紧密，则它的内聚性就越高。<br>耦合指软件系统结构中各模块间相互联系紧密程度的一种度量。模块之间联系越紧密，其耦合性就越强，模块的独立性则越差。模块间耦合高低取决于模块间接口的复杂性、调用的方式及传递的信息。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2019/12/04/python%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
     <link itemprop="mainEntityOfPage" href="https://zlloong.github.io/2019/12/04/deepin%E4%B8%8B%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -285,7 +523,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2019-12-04 18:51:14 / Modified: 20:33:57" itemprop="dateCreated datePublished" datetime="2019-12-04T18:51:14+08:00">2019-12-04</time>
+              <time title="Created: 2019-12-04 18:51:14 / Modified: 21:14:35" itemprop="dateCreated datePublished" datetime="2019-12-04T18:51:14+08:00">2019-12-04</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -293,8 +531,8 @@
               </span>
               <span class="post-meta-item-text">In</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%A1%86%E6%9E%B6/" itemprop="url" rel="index">
-                    <span itemprop="name">框架</span>
+                  <a href="/categories/Djang/" itemprop="url" rel="index">
+                    <span itemprop="name">Djang</span>
                   </a>
                 </span>
             </span>
@@ -622,7 +860,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives">
-          <span class="site-state-item-count">5</span>
+          <span class="site-state-item-count">8</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -633,7 +871,7 @@
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
-        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-count">8</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
