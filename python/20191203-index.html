@@ -46,18 +46,18 @@
   };
 </script>
 
-  <meta name="description" content="JavaScript是运行在浏览器端的脚本语言，JavaScript主要解决的是前端与用户交互的问题，包括使用交互与数据交互。 JavaScript是浏览器解释执行的，前端脚本语言还有JScript（微软，IE独有），ActionScript( Adobe公司，需要插件)等。">
-<meta name="keywords" content="前端,编程语言,爬虫">
+  <meta name="description" content="装饰器就是对函数或者方法或者类进行修饰 意图：动态地给一个对象添加一些额外的职责。就增加功能来说，装饰器模式相比生成子类更为灵活。 主要解决：一般的，我们为了扩展一个类经常使用继承方式实现，由于继承为类引入静态特征，并且随着扩展功能的增多，子类会很膨胀。">
+<meta name="keywords" content="python,基础">
 <meta property="og:type" content="article">
-<meta property="og:title" content="JS">
-<meta property="og:url" content="http:&#x2F;&#x2F;ermao7.coding.me&#x2F;2019&#x2F;12&#x2F;09&#x2F;JS&#x2F;index.html">
+<meta property="og:title" content="python 装饰器">
+<meta property="og:url" content="http:&#x2F;&#x2F;ermao7.coding.me&#x2F;python&#x2F;20191203-index.html">
 <meta property="og:site_name" content="张二毛的个人博客">
-<meta property="og:description" content="JavaScript是运行在浏览器端的脚本语言，JavaScript主要解决的是前端与用户交互的问题，包括使用交互与数据交互。 JavaScript是浏览器解释执行的，前端脚本语言还有JScript（微软，IE独有），ActionScript( Adobe公司，需要插件)等。">
+<meta property="og:description" content="装饰器就是对函数或者方法或者类进行修饰 意图：动态地给一个对象添加一些额外的职责。就增加功能来说，装饰器模式相比生成子类更为灵活。 主要解决：一般的，我们为了扩展一个类经常使用继承方式实现，由于继承为类引入静态特征，并且随着扩展功能的增多，子类会很膨胀。">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-12-09T12:51:36.371Z">
+<meta property="og:updated_time" content="2019-12-04T11:25:21.297Z">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://ermao7.coding.me/2019/12/09/JS/">
+<link rel="canonical" href="http://ermao7.coding.me/python/20191203-">
 
 
 <script id="page-configurations">
@@ -71,7 +71,7 @@
   };
 </script>
 
-  <title>JS | 张二毛的个人博客</title>
+  <title>python 装饰器 | 张二毛的个人博客</title>
   
 
 
@@ -185,7 +185,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="en">
-    <link itemprop="mainEntityOfPage" href="http://ermao7.coding.me/2019/12/09/JS/">
+    <link itemprop="mainEntityOfPage" href="http://ermao7.coding.me/python/20191203-index.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/zifeng.jpg">
@@ -198,7 +198,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          JS
+          python 装饰器
         </h1>
 
         <div class="post-meta">
@@ -207,18 +207,24 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2019-12-09 20:34:04 / Modified: 20:51:36" itemprop="dateCreated datePublished" datetime="2019-12-09T20:34:04+08:00">2019-12-09</time>
+              <time title="Created: 2019-12-03 21:22:58" itemprop="dateCreated datePublished" datetime="2019-12-03T21:22:58+08:00">2019-12-03</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2019-12-04 19:25:21" itemprop="dateModified" datetime="2019-12-04T19:25:21+08:00">2019-12-04</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
               <span class="post-meta-item-text">In</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/JS/" itemprop="url" rel="index">
-                    <span itemprop="name">JS</span>
+                  <a href="/categories/python/" itemprop="url" rel="index">
+                    <span itemprop="name">python</span>
                   </a>
                 </span>
             </span>
@@ -234,31 +240,16 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>JavaScript是运行在浏览器端的脚本语言，JavaScript主要解决的是前端与用户交互的问题，包括使用交互与数据交互。 JavaScript是浏览器解释执行的，前端脚本语言还有JScript（微软，IE独有），ActionScript( Adobe公司，需要插件)等。</p>
-<a id="more"></a>
-<h3 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h3><p>//同时定义多个变量可以用”,”隔开，公用一个‘var’关键字<br>Javascript声明变量的时候，虽然用var关键字声明和不用关键字声明，很多时候运行并没有问题，但是这两种方式还是有区别的。可以正常运行的代码并不代表是合适的代码。</p>
-<p>注意！它并不是声明了一个全局变量，而是创建了一个全局对象的属性。</p>
-<h4 id="变量类型"><a href="#变量类型" class="headerlink" title="变量类型"></a>变量类型</h4><ul>
-<li>boolean - 如果变量是 Boolean 类型的</li>
-<li>number - 如果变量是 Number 类型的 (整数、浮点数)</li>
-<li>string - 如果变量是 String 类型的 （采用””、 ‘’）</li>
-<li>object - 如果变量是一种引用类型或 Null 类型的 </li>
-<li>function – 函数类型</li>
-<li>undefined - 如果变量是 Undefined 类型的</li>
-</ul>
-<h4 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h4><p>函数isNaN()检测参数是否不是一个值为NaN</p>
-<h4 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">&amp;	&amp;运算符我们都知道，只有两个都为真，结果才为真。</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">l	l与 ll操作符的道理也是一样的，只要两个数中有一个数为1，结果就为1，其他则为0。</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">^	按位异或是两个数中只有一个1时返回1，其他情况返回0。</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">&lt;&lt;	有符号左移会将32位二进制数的所有位向左移动指定位数。</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">&gt;&gt;	有符号右移会将32位二进制数的所有位向右移动指定位数。</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">?   :    三元运算符</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">语法是 条件 ? 结果1 : 结果2;.</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line"> 这里你把条件写在问号(?)的前面后面跟着用冒号(:)分隔的结果1和结果2。满足条件时结果1否则结果2。</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">例子：</span></pre></td></tr></table></figure>
-<h4 id="逻辑"><a href="#逻辑" class="headerlink" title="逻辑"></a>逻辑</h4><p>if  switch dowhile for foreach 都与Java想同</p>
-<h3 id="HTML-渲染"><a href="#HTML-渲染" class="headerlink" title="HTML 渲染"></a>HTML 渲染</h3><h4 id="DOM"><a href="#DOM" class="headerlink" title="DOM"></a>DOM</h4><p>DOM 是Docunment Object Model （文档对象模型） HTML DOM 是干什么用的? 获取，修改，添加，删除HTML元素的标准 HTML DOM 把html文档做成树结构，被称为节点树，所有事物都是节点。<br>    1．解析HTML文件，创建DOM树<br>    2．解析CSS,形成CSS对象模型<br>    3．将CSS与DOM合并，构建渲染树（renderingtree）<br>    4．布局和绘制</p>
-<h4 id="getElementBy函数用法"><a href="#getElementBy函数用法" class="headerlink" title="getElementBy函数用法"></a>getElementBy函数用法</h4><pre><code>getElementById    通过ID获取元素
-getElementByName   通过name获取元素
-getElementsByTagName   通过标签名
-getElementsByClassName  通过class属性值</code></pre><p>可以使用内置对象document上的getElementById方法来获取页面上设置了id属性的元素，获取到的是一个html对象，然后将它赋值给一个变量，比如： ```javascript<br>第二种方法：将javascript语句放到window.onload触发的函数里面,获取元素的语句会在页面加载完后才执行，就不会出错了。 javascript// window 页面当中最大的对象</p>
-<h4 id="定时器"><a href="#定时器" class="headerlink" title="定时器"></a>定时器</h4><pre><code>setTimeout  只执行一次的定时器 
-clearTimeout 关闭只执行一次的定时器
-setInterval  反复执行的定时器
-clearInterval 关闭反复执行的定时器
-setTimeout(code,millisec,lang) - 暂停指定的毫秒数后执行指定的代码 </code></pre>
+        <p>装饰器就是对函数或者方法或者类进行修饰 意图：动态地给一个对象添加一些额外的职责。就增加功能来说，装饰器模式相比生成子类更为灵活。 主要解决：一般的，我们为了扩展一个类经常使用继承方式实现，由于继承为类引入静态特征，并且随着扩展功能的增多，子类会很膨胀。<br> <a id="more"></a></p>
+<h3 id="装饰器特点"><a href="#装饰器特点" class="headerlink" title="装饰器特点"></a>装饰器特点</h3><p>Python函数与其他函数不同一点是 函数参数可以是函数<br>装饰器没有返回值</p>
+<h3 id="装饰器使用"><a href="#装饰器使用" class="headerlink" title="装饰器使用"></a>装饰器使用</h3><p>装饰器就是定义一个函数来装饰所@的函数<br>将函数当成参数传入 并且在装饰器调用 加上所装饰的方法</p>
+<h4 id="方法带惨装饰-方法返回值装饰"><a href="#方法带惨装饰-方法返回值装饰" class="headerlink" title="方法带惨装饰 方法返回值装饰"></a>方法带惨装饰 方法返回值装饰</h4><p>装饰器有外部函数和内部函数 所装饰函数有参数的时候 就在内部函数定义 <em>arg *</em>keay 外部函数参数只有一个<br>如果所装饰的函数有返回值 那么 在内部函数中 接收该返回值 并且return出去 外部函数 return内部函数</p>
+<h4 id="带参数的装饰器"><a href="#带参数的装饰器" class="headerlink" title="带参数的装饰器"></a>带参数的装饰器</h4><p>在定义有参数的外部函数来接受 @装饰器函数  返回@description<br>返回值 是接收函数的那个参数 相当于设置一个关卡 用if判断  返回值仍然是 接收函数的</p>
+<h3 id="装饰类"><a href="#装饰类" class="headerlink" title="装饰类"></a>装饰类</h3><p>def <strong>call</strong>(self, func):<br>            # 将基本函数存入对象<br>            self.func = func</p>
+<pre><code># 返回inner函数
+return self.inner</code></pre><h3 id="然后在定义装饰器函数"><a href="#然后在定义装饰器函数" class="headerlink" title="然后在定义装饰器函数"></a>然后在定义装饰器函数</h3><p>self.func()<br>装饰类 同理 将类传入 进行实例化<br>多个装饰器 从下到上</p>
+<p>装饰器 多重函数嵌套<br>返回值都是函数为参数的<br>三个函数 是装饰器判断使用哪个方法装饰  俩个函数<br>三个类 俩个类</p>
+
     </div>
 
     
@@ -267,9 +258,8 @@ setTimeout(code,millisec,lang) - 暂停指定的毫秒数后执行指定的代�
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/%E5%89%8D%E7%AB%AF/" rel="tag"># 前端</a>
-              <a href="/tags/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" rel="tag"># 编程语言</a>
-              <a href="/tags/%E7%88%AC%E8%99%AB/" rel="tag"># 爬虫</a>
+              <a href="/tags/python/" rel="tag"># python</a>
+              <a href="/tags/%E5%9F%BA%E7%A1%80/" rel="tag"># 基础</a>
           </div>
 
         
@@ -278,12 +268,12 @@ setTimeout(code,millisec,lang) - 暂停指定的毫秒数后执行指定的代�
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2019/12/08/Markdown/" rel="prev" title="Markdown">
-      <i class="fa fa-chevron-left"></i> Markdown
+    <a href="/deepin/20191203-index.html" rel="prev" title="git命令">
+      <i class="fa fa-chevron-left"></i> git命令
     </a></div>
       <div class="post-nav-item">
-    <a href="/2019/12/09/JS2/" rel="next" title="JS2">
-      JS2 <i class="fa fa-chevron-right"></i>
+    <a href="/%E7%88%AC%E8%99%AB/20191203-index.html" rel="next" title="分布式爬虫">
+      分布式爬虫 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -322,7 +312,7 @@ setTimeout(code,millisec,lang) - 暂停指定的毫秒数后执行指定的代�
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#基础"><span class="nav-number">1.</span> <span class="nav-text">基础</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#变量类型"><span class="nav-number">1.1.</span> <span class="nav-text">变量类型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#函数"><span class="nav-number">1.2.</span> <span class="nav-text">函数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#运算符"><span class="nav-number">1.3.</span> <span class="nav-text">运算符</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#逻辑"><span class="nav-number">1.4.</span> <span class="nav-text">逻辑</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HTML-渲染"><span class="nav-number">2.</span> <span class="nav-text">HTML 渲染</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#DOM"><span class="nav-number">2.1.</span> <span class="nav-text">DOM</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#getElementBy函数用法"><span class="nav-number">2.2.</span> <span class="nav-text">getElementBy函数用法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#定时器"><span class="nav-number">2.3.</span> <span class="nav-text">定时器</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#装饰器特点"><span class="nav-number">1.</span> <span class="nav-text">装饰器特点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#装饰器使用"><span class="nav-number">2.</span> <span class="nav-text">装饰器使用</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#方法带惨装饰-方法返回值装饰"><span class="nav-number">2.1.</span> <span class="nav-text">方法带惨装饰 方法返回值装饰</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#带参数的装饰器"><span class="nav-number">2.2.</span> <span class="nav-text">带参数的装饰器</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#装饰类"><span class="nav-number">3.</span> <span class="nav-text">装饰类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#然后在定义装饰器函数"><span class="nav-number">4.</span> <span class="nav-text">然后在定义装饰器函数</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 

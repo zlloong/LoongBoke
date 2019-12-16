@@ -46,18 +46,18 @@
   };
 </script>
 
-  <meta name="description" content="MySQL 数据操作 DML  数据的DML操作：添加数据，修改数据，删除数据">
-<meta name="keywords" content="基础">
+  <meta name="description" content="开发视频网站">
+<meta name="keywords" content="python,web开发,框架">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Mysql2">
-<meta property="og:url" content="http:&#x2F;&#x2F;ermao7.coding.me&#x2F;2019&#x2F;12&#x2F;13&#x2F;Mysql2&#x2F;index.html">
+<meta property="og:title" content="Django应用1">
+<meta property="og:url" content="http:&#x2F;&#x2F;ermao7.coding.me&#x2F;Djang&#x2F;20191209-index.html">
 <meta property="og:site_name" content="张二毛的个人博客">
-<meta property="og:description" content="MySQL 数据操作 DML  数据的DML操作：添加数据，修改数据，删除数据">
+<meta property="og:description" content="开发视频网站">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-12-13T14:30:23.183Z">
+<meta property="og:updated_time" content="2019-12-13T14:30:40.101Z">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://ermao7.coding.me/2019/12/13/Mysql2/">
+<link rel="canonical" href="http://ermao7.coding.me/Djang/20191209-">
 
 
 <script id="page-configurations">
@@ -71,7 +71,7 @@
   };
 </script>
 
-  <title>Mysql2 | 张二毛的个人博客</title>
+  <title>Django应用1 | 张二毛的个人博客</title>
   
 
 
@@ -185,7 +185,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="en">
-    <link itemprop="mainEntityOfPage" href="http://ermao7.coding.me/2019/12/13/Mysql2/">
+    <link itemprop="mainEntityOfPage" href="http://ermao7.coding.me/Djang/20191209-index.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/zifeng.jpg">
@@ -198,7 +198,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Mysql2
+          Django应用1
         </h1>
 
         <div class="post-meta">
@@ -207,18 +207,24 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2019-12-13 22:11:02 / Modified: 22:30:23" itemprop="dateCreated datePublished" datetime="2019-12-13T22:11:02+08:00">2019-12-13</time>
+              <time title="Created: 2019-12-09 22:28:37" itemprop="dateCreated datePublished" datetime="2019-12-09T22:28:37+08:00">2019-12-09</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2019-12-13 22:30:40" itemprop="dateModified" datetime="2019-12-13T22:30:40+08:00">2019-12-13</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
               <span class="post-meta-item-text">In</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" itemprop="url" rel="index">
-                    <span itemprop="name">数据库</span>
+                  <a href="/categories/Djang/" itemprop="url" rel="index">
+                    <span itemprop="name">Djang</span>
                   </a>
                 </span>
             </span>
@@ -234,31 +240,23 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>MySQL 数据操作 DML</p>
-<blockquote>
-<p>数据的DML操作：添加数据，修改数据，删除数据</p>
-</blockquote>
+        <p>开发视频网站</p>
 <a id="more"></a>
-<h3 id="增加-insert"><a href="#增加-insert" class="headerlink" title="增加 insert"></a>增加 insert</h3><pre><code>insert into 表名[(字段列表)] values(值列表...)
-插入单行的时候使用VALUES，在插入多行的时候使用VALUE 这样比较快一点</code></pre><p>批量添加用逗号分隔 在value后</p>
-<h3 id="修改-update"><a href="#修改-update" class="headerlink" title="修改 update"></a>修改 update</h3><pre><code>update 表名 set 字段1=值1,字段2=值2,字段n=值n... where 条件</code></pre><h3 id="删除-delete"><a href="#删除-delete" class="headerlink" title="删除 delete"></a>删除 delete</h3><pre><code>elete from 表名 [where 条件]
-between 20 and 30 区间and</code></pre><h3 id="查询-selelct"><a href="#查询-selelct" class="headerlink" title="查询 selelct"></a>查询 selelct</h3><p>select * from stu;</p>
-<h3 id="WHERE条件"><a href="#WHERE条件" class="headerlink" title="WHERE条件"></a>WHERE条件</h3><p>你可以在 WHERE 子句中指定任何条件。 你可以使用 AND 或者 OR 指定一个或多个条件。 WHERE 子句也可以运用于 SQL 的 DELETE 或者 UPDATE 命令。 WHERE 子句类似于程序语言中的 if 条件，根据 MySQL 表中的字段值来读取指定的数据。</p>
-<h4 id="like字句-模糊查找"><a href="#like字句-模糊查找" class="headerlink" title="like字句 模糊查找"></a>like字句 模糊查找</h4><p>–9. 查询name字段值是以zh开头的所有信息<br>select * from stu where name like “zh%”;<br>select * from stu where name regexp  “^zh”; –正则写法</p>
-<p>–11. 查询姓名是任意四位字符构成的信息。</p>
-<blockquote>
-<p>mysql&gt; select * from stu where name like “____”;<br>mysql&gt; select * from stu where name regexp “^[a-z0-9]{4}$”;</p>
-</blockquote>
-<h3 id="MySQL的统计函数（聚合函数）"><a href="#MySQL的统计函数（聚合函数）" class="headerlink" title="MySQL的统计函数（聚合函数）"></a>MySQL的统计函数（聚合函数）</h3><p>max() min() count() sum() avg()<br> 获取学生表中最大、最小以及平均年龄是多少？<br>mysql&gt; select max(age),min(age),avg(age) from stu;  函数可以用在字段<br>– 获取学生表中男生m的数量<br>mysql&gt; select count(*) from stu where sex=’m’;</p>
-<h3 id="分组"><a href="#分组" class="headerlink" title="分组"></a>分组</h3><p>GROUP BY 语句 分组<br>###ORDER BY 排序 – asc 默认升序 desc 降序<br>select * from stu order by age asc;  –默认asc升序 可省略<br>– 查询学生信息，按班级做升序排序，相同班级按年龄降序排序<br>mysql&gt; select * from stu order by classid asc,age desc;</p>
-<h3 id="页数"><a href="#页数" class="headerlink" title="页数"></a>页数</h3><p>limit 关键字 查询部分数据<br>mysql&gt; select * from stu limit 5; 前五条<br>– 排除前2条后再获取4条信息<br>mysql&gt; select * from stu limit 2,4;</p>
-<p>页号     limit语句                起始分页码数值是页大小的几倍。<br>页数为起始分页码数值是页大小的几倍</p>
-<h3 id="数据库导出导入"><a href="#数据库导出导入" class="headerlink" title="数据库导出导入"></a>数据库导出导入</h3><blockquote>
-<p>– 将lamp138库导出<br>D:&gt;mysqldump -u root -p lamp138 &gt;lamp138.sql<br>Enter password:<br>—- 将lamp138库中的stu表导出<br>D:&gt;mysqldump -u root -p lamp138 stu &gt;lamp138_stu.sql<br>Enter password:</p>
-</blockquote>
-<blockquote>
-<p>– 将lamp138库导入<br>D:&gt;mysql -u root -p lamp138&lt;lamp138.sql<br>Enter password:<br>– 将lamp138库中stu表导入<br>D:&gt;mysql -u root -p lamp138&lt;lamp138_stu.sql<br>Enter password:</p>
-</blockquote>
+<h3 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h3><p>采取用户处理分块模式为注册单独设定一个独立框架文件</p>
+<h3 id="实现用户登录逻辑"><a href="#实现用户登录逻辑" class="headerlink" title="实现用户登录逻辑"></a>实现用户登录逻辑</h3><h4 id="注册"><a href="#注册" class="headerlink" title="注册"></a>注册</h4><ol>
+<li>首先在models实现模型设置定义所需要的类和参数然后进行数据库迁移</li>
+<li>在前端模板放入前端写好的前端页面</li>
+<li>将js css 图片等数据 放入static  进行静态加载</li>
+<li><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">前端页面调用 &#123;% load static %&#125;  &quot;&#123;%static &#39;文件下路径&#39;%&#125;&quot;加载</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">python3 manage.py runserver --insecure</span></pre></td></tr></table></figure></li>
+<li>前端页面传输数据返回给路由由传输到views.来进行数据判断<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">&lt;form method&#x3D;&quot;post&quot; action&#x3D;&quot;&#123;% url &#39;users:signup&#39; %&#125;&quot;&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">form.password2 #接收参数</span></pre></td></tr></table></figure></li>
+<li>views接收参数 检查是否为post请求<br>然后进行校验</li>
+<li>form = SignUpForm(request.POST)</li>
+<li>建立一个类 form校验类<br>通过传输数据来进行判断是否有错误<br>有错误return出去错误信息<br>没有错误传输到数据库<br>没有参数new一个新的值给from<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">error_messages &#x3D; &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">       &#39;invalid_login&#39;: &quot;两次密码不一样&quot;, &#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">   username &#x3D; forms.CharField(</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">       error_messages&#x3D;&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">           &quot;required&quot;: &quot;用户名不为空&quot;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">       &#125;,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">       widget&#x3D;forms.TextInput(attrs&#x3D;&#123;&#39;placeholder&#39;: &quot;请输入用户名&quot;&#125;),</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">   )</span></pre></td></tr></table></figure>
+<h4 id="登录"><a href="#登录" class="headerlink" title="登录"></a>登录</h4></li>
+<li>建立前段文件 同理注册传输数据</li>
+<li>路由传输到view.log方法进行验证</li>
+<li>验证成功返回和数据库进行比对成功进入不成功返回错误信息</li>
+</ol>
 
     </div>
 
@@ -268,7 +266,9 @@ between 20 and 30 区间and</code></pre><h3 id="查询-selelct"><a href="#查询
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/%E5%9F%BA%E7%A1%80/" rel="tag"># 基础</a>
+              <a href="/tags/python/" rel="tag"># python</a>
+              <a href="/tags/web%E5%BC%80%E5%8F%91/" rel="tag"># web开发</a>
+              <a href="/tags/%E6%A1%86%E6%9E%B6/" rel="tag"># 框架</a>
           </div>
 
         
@@ -277,12 +277,12 @@ between 20 and 30 区间and</code></pre><h3 id="查询-selelct"><a href="#查询
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2019/12/13/Mysql/" rel="prev" title="Mysql">
-      <i class="fa fa-chevron-left"></i> Mysql
+    <a href="/JS/20191209-index.html" rel="prev" title="JS正则">
+      <i class="fa fa-chevron-left"></i> JS正则
     </a></div>
       <div class="post-nav-item">
-    <a href="/2019/12/13/Mysql%E9%AB%98%E7%BA%A7/" rel="next" title="Mysql高级">
-      Mysql高级 <i class="fa fa-chevron-right"></i>
+    <a href="/%E6%95%B0%E6%8D%AE%E5%BA%93/20191213-index.html" rel="next" title="Mysql">
+      Mysql <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -321,7 +321,7 @@ between 20 and 30 区间and</code></pre><h3 id="查询-selelct"><a href="#查询
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#增加-insert"><span class="nav-number">1.</span> <span class="nav-text">增加 insert</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#修改-update"><span class="nav-number">2.</span> <span class="nav-text">修改 update</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#删除-delete"><span class="nav-number">3.</span> <span class="nav-text">删除 delete</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#查询-selelct"><span class="nav-number">4.</span> <span class="nav-text">查询 selelct</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#WHERE条件"><span class="nav-number">5.</span> <span class="nav-text">WHERE条件</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#like字句-模糊查找"><span class="nav-number">5.1.</span> <span class="nav-text">like字句 模糊查找</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#MySQL的统计函数（聚合函数）"><span class="nav-number">6.</span> <span class="nav-text">MySQL的统计函数（聚合函数）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#分组"><span class="nav-number">7.</span> <span class="nav-text">分组</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#页数"><span class="nav-number">8.</span> <span class="nav-text">页数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数据库导出导入"><span class="nav-number">9.</span> <span class="nav-text">数据库导出导入</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#目录"><span class="nav-number">1.</span> <span class="nav-text">目录</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#实现用户登录逻辑"><span class="nav-number">2.</span> <span class="nav-text">实现用户登录逻辑</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#注册"><span class="nav-number">2.1.</span> <span class="nav-text">注册</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#登录"><span class="nav-number">2.2.</span> <span class="nav-text">登录</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 

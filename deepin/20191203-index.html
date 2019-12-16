@@ -46,18 +46,18 @@
   };
 </script>
 
-  <meta name="description" content="JS 高级应用">
-<meta name="keywords" content="前端,编程语言,爬虫">
+  <meta name="description" content="git配置">
+<meta name="keywords" content="git">
 <meta property="og:type" content="article">
-<meta property="og:title" content="JS2">
-<meta property="og:url" content="http:&#x2F;&#x2F;ermao7.coding.me&#x2F;2019&#x2F;12&#x2F;09&#x2F;JS2&#x2F;index.html">
+<meta property="og:title" content="git命令">
+<meta property="og:url" content="http:&#x2F;&#x2F;ermao7.coding.me&#x2F;deepin&#x2F;20191203-index.html">
 <meta property="og:site_name" content="张二毛的个人博客">
-<meta property="og:description" content="JS 高级应用">
+<meta property="og:description" content="git配置">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-12-09T13:07:34.710Z">
+<meta property="og:updated_time" content="2019-12-08T07:32:19.393Z">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://ermao7.coding.me/2019/12/09/JS2/">
+<link rel="canonical" href="http://ermao7.coding.me/deepin/20191203-">
 
 
 <script id="page-configurations">
@@ -71,7 +71,7 @@
   };
 </script>
 
-  <title>JS2 | 张二毛的个人博客</title>
+  <title>git命令 | 张二毛的个人博客</title>
   
 
 
@@ -185,7 +185,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="en">
-    <link itemprop="mainEntityOfPage" href="http://ermao7.coding.me/2019/12/09/JS2/">
+    <link itemprop="mainEntityOfPage" href="http://ermao7.coding.me/deepin/20191203-index.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/zifeng.jpg">
@@ -198,7 +198,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          JS2
+          git命令
         </h1>
 
         <div class="post-meta">
@@ -207,18 +207,24 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2019-12-09 20:50:43 / Modified: 21:07:34" itemprop="dateCreated datePublished" datetime="2019-12-09T20:50:43+08:00">2019-12-09</time>
+              <time title="Created: 2019-12-03 13:28:36" itemprop="dateCreated datePublished" datetime="2019-12-03T13:28:36+08:00">2019-12-03</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2019-12-08 15:32:19" itemprop="dateModified" datetime="2019-12-08T15:32:19+08:00">2019-12-08</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
               <span class="post-meta-item-text">In</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/JS/" itemprop="url" rel="index">
-                    <span itemprop="name">JS</span>
+                  <a href="/categories/deepin/" itemprop="url" rel="index">
+                    <span itemprop="name">deepin</span>
                   </a>
                 </span>
             </span>
@@ -234,20 +240,11 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>JS 高级应用</p>
-<a id="more"></a>
-<h3 id="JS函数"><a href="#JS函数" class="headerlink" title="JS函数"></a>JS函数</h3><p>1.function abc(){<br>2.第二种是在表达式中定义函数 var 函数名 = function(参数1，参数2，…){函数体}; 推荐： 匿名函数表达式 var 函数名 = function 函数名（可写可不写）(参数1，参数2，…){函数体}; 命名函数表达式（赋值表达）</p>
-<blockquote>
-<p>1.以函数声明的方法定义的函数，函数名是必须的，而函数表达式的函数名是可选的。<br>2.以函数声明的方法定义的函数，函数可以在函数声明之前调用，而函数表达式的函数只能在声明之后调用。<br>3.以函数声明的方法定义的函数并不是真正的声明，他们仅仅可以出现在全局中或者嵌套在其它函数中</p>
-</blockquote>
-<p>这就要从JavaScript解释引擎机制上说了! 在采用定义式创建同名函数时，后创建的函数会覆盖先创建的函数。这种差别是由于JavaScript解释引擎的工作机制所导致的。JavaScript解释引擎在执行任何函数调用之前，首先会在全局作用域中注册以定义式创建的函数，然后再依次执行函数调用。由于注册函数时，后定义的函数重写了先定义的函数，因此无论调用语句位于何处，执行的都是后定义的函数。</p>
-<p>对于声明式创建的函数，JavaScript解释引擎会像对待任何声明的变量一样，等到执行调用该变量的代码时才会对变量求值。由于JavaScript代码是从上到下顺序执行的，因此当执行第一个a()调用时，a函数的代码就是首先定义代码；而当执行第二个a()调用时，a函数的代码又变成了后来定义的代码</p>
-<p>在函数代码中，使用特殊对象 arguments，开发者 无需明确指出参数名，就能访问它们。<br>关于变量和参数问题：<br>函数外面定义的变量是全局变量，函数内可以直接使用。<br>在函数内部没有使用var定义的变量则为全局变量，<br>*在函数内使用var关键字定义的变量是局部变量，即出了函数外边无法获取。<br>js函数定义的参数没有默认值,(</p>
-<h3 id="JS-对象"><a href="#JS-对象" class="headerlink" title="JS 对象"></a>JS 对象</h3><p>JavaScript 中的所有事物都是对象：字符串、数字、数组、日期，等等。<br>属性是与对象相关的值。<br>方法是能够在对象上执行的动作。<br>1.self 指当前窗口对象  （指窗口本身，返回的对象跟windows对象是一样的）<br>2.this 指当前对象</p>
-<h3 id="测试类型"><a href="#测试类型" class="headerlink" title="测试类型:"></a>测试类型:</h3><p>1.typeof()  //global对象的其中一个方法，typeof()<br>2.对象.constructor; //查看当前对象的构造函数是谁</p>
-<p>if(arr.constructor==Array){<br>    alert(“数组”); //数组推荐用这种方法，因为typeof得到是object<br>}</p>
-<h3 id="数组对象"><a href="#数组对象" class="headerlink" title="数组对象"></a>数组对象</h3><p>var aList = new Array(1,2,3);<br>3、push() 和 pop() 从数组最后增加成员或删除成员<br>4、unshift()和 shift() 从数组前面增加成员或删除成员<br>6.sort() 升序排列数组<br>7.reverse() 反转数组项的顺序。<br>8.slice() 返回从原数组中指定开始下标到结束下标之间的项组成的新数组。</p>
-<h3 id="数学"><a href="#数学" class="headerlink" title="数学"></a>数学</h3><p>同Java Python Math</p>
+        <p>git配置<br> <a id="more"></a></p>
+<p>git config –global user.name “”<br>git config –global user.email””<br>git config –list 查看<br>建立一个文件夹<br>git init 初始化在当前文件夹<br>git remote add origin 仓库链接 打开<br>git clone 厂库链接 克隆<br>git add 添加当前本地<br>git status 查看有无更更改<br>git commit -m “修改元素” 提交更改<br>git push origin master 上传git</p>
+<p>所以，需要用git diff这个命令看看：</p>
+<p>知道了对readme.txt作了什么修改后，再把它提交到仓库就放心多了，提交修改和提交新文件是一样的两步，第一步是git add：</p>
+<p>版本控制系统肯定有某个命令可以告诉我们历史记录，在Git中，我们用git log命令查看：</p>
 
     </div>
 
@@ -257,9 +254,7 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/%E5%89%8D%E7%AB%AF/" rel="tag"># 前端</a>
-              <a href="/tags/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" rel="tag"># 编程语言</a>
-              <a href="/tags/%E7%88%AC%E8%99%AB/" rel="tag"># 爬虫</a>
+              <a href="/tags/git/" rel="tag"># git</a>
           </div>
 
         
@@ -267,13 +262,10 @@
 
         
     <div class="post-nav">
+      <div class="post-nav-item"></div>
       <div class="post-nav-item">
-    <a href="/2019/12/09/JS/" rel="prev" title="JS">
-      <i class="fa fa-chevron-left"></i> JS
-    </a></div>
-      <div class="post-nav-item">
-    <a href="/2019/12/09/JS%E6%AD%A3%E5%88%99/" rel="next" title="JS正则">
-      JS正则 <i class="fa fa-chevron-right"></i>
+    <a href="/python/20191203-index.html" rel="next" title="python 装饰器">
+      python 装饰器 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -312,7 +304,6 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#JS函数"><span class="nav-number">1.</span> <span class="nav-text">JS函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#JS-对象"><span class="nav-number">2.</span> <span class="nav-text">JS 对象</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#测试类型"><span class="nav-number">3.</span> <span class="nav-text">测试类型:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数组对象"><span class="nav-number">4.</span> <span class="nav-text">数组对象</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数学"><span class="nav-number">5.</span> <span class="nav-text">数学</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 

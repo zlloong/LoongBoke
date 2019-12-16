@@ -46,18 +46,18 @@
   };
 </script>
 
-  <meta name="description" content="创建 Django 应用的典型流程是，先建立数据模型，然后搭建管理站点，之后你的员工（或者客户）就可以向网站里填充数据了.">
-<meta name="keywords" content="python,web开发,框架">
+  <meta name="description" content="在github下构建仓库利用note hexo框架搭建个人博客">
+<meta name="keywords" content="blog,deepin">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Django框架(二)">
-<meta property="og:url" content="http:&#x2F;&#x2F;ermao7.coding.me&#x2F;2019&#x2F;12&#x2F;05&#x2F;Django%E6%A1%86%E6%9E%B6-%E4%BA%8C&#x2F;index.html">
+<meta property="og:title" content="deepin下搭建博客">
+<meta property="og:url" content="http:&#x2F;&#x2F;ermao7.coding.me&#x2F;deepin&#x2F;20191208-index.html">
 <meta property="og:site_name" content="张二毛的个人博客">
-<meta property="og:description" content="创建 Django 应用的典型流程是，先建立数据模型，然后搭建管理站点，之后你的员工（或者客户）就可以向网站里填充数据了.">
+<meta property="og:description" content="在github下构建仓库利用note hexo框架搭建个人博客">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-12-05T14:14:44.000Z">
+<meta property="og:updated_time" content="2019-12-08T08:05:03.279Z">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://ermao7.coding.me/2019/12/05/Django%E6%A1%86%E6%9E%B6-%E4%BA%8C/">
+<link rel="canonical" href="http://ermao7.coding.me/deepin/20191208-">
 
 
 <script id="page-configurations">
@@ -71,7 +71,7 @@
   };
 </script>
 
-  <title>Django框架(二) | 张二毛的个人博客</title>
+  <title>deepin下搭建博客 | 张二毛的个人博客</title>
   
 
 
@@ -185,7 +185,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="en">
-    <link itemprop="mainEntityOfPage" href="http://ermao7.coding.me/2019/12/05/Django%E6%A1%86%E6%9E%B6-%E4%BA%8C/">
+    <link itemprop="mainEntityOfPage" href="http://ermao7.coding.me/deepin/20191208-index.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/zifeng.jpg">
@@ -198,7 +198,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Django框架(二)
+          deepin下搭建博客
         </h1>
 
         <div class="post-meta">
@@ -209,7 +209,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2019-12-05 21:38:10 / Modified: 22:14:44" itemprop="dateCreated datePublished" datetime="2019-12-05T21:38:10+08:00">2019-12-05</time>
+              <time title="Created: 2019-12-08 15:28:27 / Modified: 16:05:03" itemprop="dateCreated datePublished" datetime="2019-12-08T15:28:27+08:00">2019-12-08</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -217,8 +217,8 @@
               </span>
               <span class="post-meta-item-text">In</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Djang/" itemprop="url" rel="index">
-                    <span itemprop="name">Djang</span>
+                  <a href="/categories/deepin/" itemprop="url" rel="index">
+                    <span itemprop="name">deepin</span>
                   </a>
                 </span>
             </span>
@@ -234,12 +234,14 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>创建 Django 应用的典型流程是，先建立数据模型，然后搭建管理站点，之后你的员工（或者客户）就可以向网站里填充数据了.</p>
-<a id="more"></a>
-<h3 id="URLs类"><a href="#URLs类" class="headerlink" title="URLs类"></a>URLs类</h3><p>URL 路径映射到了 Python 回调函数（“视图”）。路径字符串使用参数标签从URL中“捕获”相应值。当用户请求页面时，Django 依次遍历路径，直至初次匹配到了请求的 URL。(如果无匹配项，Django 会调用 404 视图。) 这个过程非常快，因为路径在加载时就编译成了正则表达式。</p>
-<h3 id="View类"><a href="#View类" class="headerlink" title="View类"></a>View类</h3><p>视图函数的执行结果只可能有两种：返回一个包含请求页面元素的 HttpResponse 对象，或者是抛出 Http404 这类异常。至于执行过程中的其它的动作则由你决定。<br>通常来说，一个视图的工作就是：从参数获取数据，装载一个模板，然后将根据获取的数据对模板进行渲染。下面是一个 year_archive 的视图样例</p>
-<h3 id="数据目标类变量"><a href="#数据目标类变量" class="headerlink" title="数据目标类变量"></a>数据目标类变量</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">&#123;% extends &quot;base.html&quot; %&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">&#123;% block title %&#125;Articles for &#123;&#123; year &#125;&#125;&#123;% endblock %&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">&#123;% block content %&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">&lt;h1&gt;Articles for &#123;&#123; year &#125;&#125;&lt;&#x2F;h1&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">&#123;% for article in article_list %&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">    &lt;p&gt;&#123;&#123; article.headline &#125;&#125;&lt;&#x2F;p&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">    &lt;p&gt;By &#123;&#123; article.reporter.full_name &#125;&#125;&lt;&#x2F;p&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">    &lt;p&gt;Published &#123;&#123; article.pub_date|date:&quot;F j, Y&quot; &#125;&#125;&lt;&#x2F;p&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">&#123;% endfor %&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line">&#123;% endblock %&#125;</span></pre></td></tr></table></figure>
-<h3 id="每个文件的作用"><a href="#每个文件的作用" class="headerlink" title="每个文件的作用"></a>每个文件的作用</h3><p>manage.py: 一个让你用各种方式管理 Django 项目的命令行工具。你可以阅读 django-admin and manage.py 获取所有 manage.py 的细节。<br>里面一层的 mysite/ 目录包含你的项目，它是一个纯 Python 包。它的名字就是当你引用它内部任何东西时需要用到的 Python 包名。 (比如 mysite.urls).<br>mysite/<strong>init</strong>.py：一个空文件，告诉 Python 这个目录应该被认为是一个 Python 包。如果你是 Python 初学者，阅读官方文档中的 更多关于包的知识。<br>mysite/settings.py：Django 项目的配置文件。如果你想知道这个文件是如何工作的，请查看 Django 配置 了解细节。<br>mysite/urls.py：Django 项目的 URL 声明，就像你网站的“目录”。阅读 URL调度器 文档来获取更多关于 URL 的内容。<br>mysite/asgi.py: An entry-point for ASGI-compatible web servers to serve your project. See How to deploy with ASGI for more details.<br>mysite/wsgi.py：作为你的项目的运行在 WSGI 兼容的Web服务器上的入口。阅读 如何使用 WSGI 进行部署 了解更多细节。</p>
+        <p>在github下构建仓库利用note hexo框架搭建个人博客</p>
+ <a id="more"></a>
+<h3 id="构建github仓库"><a href="#构建github仓库" class="headerlink" title="构建github仓库"></a>构建github仓库</h3><p>git init 初始化在当前文文件下</p>
+<h3 id="安装文件"><a href="#安装文件" class="headerlink" title="安装文件"></a>安装文件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">sudo apt-get install -y nodejs</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">sudo apt-get install -y build-essential</span></pre></td></tr></table></figure>
+
+<h3 id="安装到文件下设置配置文件"><a href="#安装到文件下设置配置文件" class="headerlink" title="安装到文件下设置配置文件"></a>安装到文件下设置配置文件</h3><p>命令配置</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">hexo clean  //清除缓存</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">hexo generate   //生成静态文件</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">hexo server</span></pre></td></tr></table></figure>
+<h3 id="上传到github"><a href="#上传到github" class="headerlink" title="上传到github"></a>上传到github</h3><h3 id="域名更改"><a href="#域名更改" class="headerlink" title="域名更改"></a>域名更改</h3><h3 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h3><p><a href="https://smelond.com/2018/06/21/hexo%E4%BB%8Ewindows%E6%90%AC%E5%AE%B6%E5%88%B0deepin/" target="_blank" rel="noopener">https://smelond.com/2018/06/21/hexo%E4%BB%8Ewindows%E6%90%AC%E5%AE%B6%E5%88%B0deepin/</a><br><a href="https://www.zhihu.com/question/31377141/answer/103056861" target="_blank" rel="noopener">https://www.zhihu.com/question/31377141/answer/103056861</a><br><a href="http://rosesnow.top/2018/12/13/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%971/" target="_blank" rel="noopener">http://rosesnow.top/2018/12/13/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%971/</a></p>
 
     </div>
 
@@ -249,9 +251,8 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/python/" rel="tag"># python</a>
-              <a href="/tags/web%E5%BC%80%E5%8F%91/" rel="tag"># web开发</a>
-              <a href="/tags/%E6%A1%86%E6%9E%B6/" rel="tag"># 框架</a>
+              <a href="/tags/blog/" rel="tag"># blog</a>
+              <a href="/tags/deepin/" rel="tag"># deepin</a>
           </div>
 
         
@@ -260,12 +261,12 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2019/12/05/python%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1-%E4%BA%8C/" rel="prev" title="python面向对象(二)">
-      <i class="fa fa-chevron-left"></i> python面向对象(二)
+    <a href="/Djang/20191205-index.html" rel="prev" title="Django框架(二)">
+      <i class="fa fa-chevron-left"></i> Django框架(二)
     </a></div>
       <div class="post-nav-item">
-    <a href="/2019/12/08/deepin%E4%B8%8B%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" rel="next" title="deepin下搭建博客">
-      deepin下搭建博客 <i class="fa fa-chevron-right"></i>
+    <a href="/python/20191208-index.html" rel="next" title="正则表达式">
+      正则表达式 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -304,7 +305,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#URLs类"><span class="nav-number">1.</span> <span class="nav-text">URLs类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#View类"><span class="nav-number">2.</span> <span class="nav-text">View类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数据目标类变量"><span class="nav-number">3.</span> <span class="nav-text">数据目标类变量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#每个文件的作用"><span class="nav-number">4.</span> <span class="nav-text">每个文件的作用</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#构建github仓库"><span class="nav-number">1.</span> <span class="nav-text">构建github仓库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装文件"><span class="nav-number">2.</span> <span class="nav-text">安装文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装到文件下设置配置文件"><span class="nav-number">3.</span> <span class="nav-text">安装到文件下设置配置文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#上传到github"><span class="nav-number">4.</span> <span class="nav-text">上传到github</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#域名更改"><span class="nav-number">5.</span> <span class="nav-text">域名更改</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#参考链接"><span class="nav-number">6.</span> <span class="nav-text">参考链接</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
