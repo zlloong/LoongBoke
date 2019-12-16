@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://ermao7.coding.me/uncategorized/20191216-null.html</loc>
+    <loc>http://ermao7.coding.me/deepin/20191208-index.html</loc>
     
-    <lastmod>2019-12-16T06:10:52.820Z</lastmod>
+    <lastmod>2019-12-16T12:01:41.227Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ermao7.coding.me/deepin/20191216-blog2.html</loc>
+    
+    <lastmod>2019-12-16T11:58:41.252Z</lastmod>
     
   </url>
   
@@ -68,13 +75,6 @@
     <loc>http://ermao7.coding.me/python/20191208-index.html</loc>
     
     <lastmod>2019-12-08T08:05:04.416Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://ermao7.coding.me/deepin/20191208-index.html</loc>
-    
-    <lastmod>2019-12-08T08:05:03.279Z</lastmod>
     
   </url>
   

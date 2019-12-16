@@ -8,3 +8,5 @@ Allow: /about/
 Disallow: /js/
 Disallow: /css/
 Disallow: /lib/
+
+Sitemap: ermao7.coding.me/sitemap.xml
