@@ -46,18 +46,18 @@
   };
 </script>
 
-  <meta name="description" content="正则表达式本身是一种小型的、高度专业化的编程语言，而在python中，通过内嵌集成re模块，程序猿 们可以直接调用来实现正则匹配。正则表达式模式被编译成一系列的字节码，然后由用C编写的匹配引擎执行。">
-<meta name="keywords" content="python,爬虫,基础">
+  <meta name="description" content="引言爬虫基础爬虫分为通用爬虫和聚焦爬虫 通用爬虫应用搜索专注爬一个页面叫做聚焦爬虫 基础">
+<meta name="keywords" content="python">
 <meta property="og:type" content="article">
-<meta property="og:title" content="正则表达式">
-<meta property="og:url" content="http:&#x2F;&#x2F;ermao7.coding.me&#x2F;python&#x2F;20191208-index.html">
+<meta property="og:title" content="爬虫使用1">
+<meta property="og:url" content="http:&#x2F;&#x2F;ermao7.coding.me&#x2F;%E7%88%AC%E8%99%AB&#x2F;20191217-%E7%88%AC%E8%99%AB1.html">
 <meta property="og:site_name" content="张二毛的个人博客">
-<meta property="og:description" content="正则表达式本身是一种小型的、高度专业化的编程语言，而在python中，通过内嵌集成re模块，程序猿 们可以直接调用来实现正则匹配。正则表达式模式被编译成一系列的字节码，然后由用C编写的匹配引擎执行。">
+<meta property="og:description" content="引言爬虫基础爬虫分为通用爬虫和聚焦爬虫 通用爬虫应用搜索专注爬一个页面叫做聚焦爬虫 基础">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-12-17T12:02:46.211Z">
+<meta property="og:updated_time" content="2019-12-17T13:15:12.210Z">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://ermao7.coding.me/python/20191208-">
+<link rel="canonical" href="http://ermao7.coding.me/%E7%88%AC%E8%99%AB/20191217-%E7%88%AC%E8%99%AB1.html">
 
 
 <script id="page-configurations">
@@ -71,7 +71,7 @@
   };
 </script>
 
-  <title>正则表达式 | 张二毛的个人博客</title>
+  <title>爬虫使用1 | 张二毛的个人博客</title>
   
 
 
@@ -185,7 +185,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="en">
-    <link itemprop="mainEntityOfPage" href="http://ermao7.coding.me/python/20191208-index.html">
+    <link itemprop="mainEntityOfPage" href="http://ermao7.coding.me/%E7%88%AC%E8%99%AB/20191217-%E7%88%AC%E8%99%AB1.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/zifeng.jpg">
@@ -198,7 +198,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          正则表达式
+          爬虫使用1
         </h1>
 
         <div class="post-meta">
@@ -207,24 +207,18 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
+              
 
-              <time title="Created: 2019-12-08 15:28:27" itemprop="dateCreated datePublished" datetime="2019-12-08T15:28:27+08:00">2019-12-08</time>
+              <time title="Created: 2019-12-17 19:49:43 / Modified: 21:15:12" itemprop="dateCreated datePublished" datetime="2019-12-17T19:49:43+08:00">2019-12-17</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2019-12-17 20:02:46" itemprop="dateModified" datetime="2019-12-17T20:02:46+08:00">2019-12-17</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
               <span class="post-meta-item-text">In</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/python/" itemprop="url" rel="index">
-                    <span itemprop="name">python</span>
+                  <a href="/categories/%E7%88%AC%E8%99%AB/" itemprop="url" rel="index">
+                    <span itemprop="name">爬虫</span>
                   </a>
                 </span>
             </span>
@@ -240,14 +234,21 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>正则表达式本身是一种小型的、高度专业化的编程语言，而在python中，通过内嵌集成re模块，程序猿 们可以直接调用来实现正则匹配。正则表达式模式被编译成一系列的字节码，然后由用C编写的匹配引擎执行。<br> <a id="more"></a></p>
-<h3 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h3><p>compile()<br>编译正则表达式模式，返回一个对象的模式。（可以把那些常用的正则表达式编译成正则表达式对象，这样可以提高一点效率。）<br>格式：re.compile(pattern,flags=0)</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">标志	含义</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">re.S(DOTALL)	使.匹配包括换行在内的所有字符</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">re.I（IGNORECASE）	使匹配对大小写不敏感</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">re.L（LOCALE）	做本地化识别（locale-aware)匹配，法语等</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">re.M(MULTILINE)	多行匹配，影响^和$</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">re.X(VERBOSE)	该标志通过给予更灵活的格式以便将正则表达式写得更易于理解</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">re.U 根据Unicode字符集解析字符，这个标志影响\w,\W,\b,\B</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">注意： match 和 search 是匹配一次 findall 匹配所有。</span></pre></td></tr></table></figure>
-<h3 id="常用字符所代表的含义-规则前加R防止转义"><a href="#常用字符所代表的含义-规则前加R防止转义" class="headerlink" title="常用字符所代表的含义(规则前加R防止转义)"></a>常用字符所代表的含义(规则前加R防止转义)</h3><p>\d : 匹配一个数字<br>\w : 匹配一个数字字母下划线<br>\s : 匹配空格<br>\D : 匹配非 \d<br>\W : 匹配非 \w<br>\S : 匹配非 \s<br>.: 匹配任意字符,但是不能匹配换行 ,如果加上 re.S 则匹配换行符<br>.<em>? : 非贪婪模式<br>.</em> : 贪婪模式<br><em>: 匹配 0 - N 个</em>号前边的字符<br>+: 匹配 1 - N 个+号前边的字符<br>?: 匹配 0 - 1 个?号前边的字符<br>[] : 任意字符，范围例如[a-zA-Z]所有字符都是原字符（无特殊含义）<br>[^] : 非 []内容里面的字符<br>{n} : 重复 N次<br>{m,n} : 重复 m 到 n 次<br>() : 分组<br>^ : 必须以规则开始<br>$ ：必须以规则结束</p>
-<h3 id="匹配中文的的正则"><a href="#匹配中文的的正则" class="headerlink" title="匹配中文的的正则"></a>匹配中文的的正则</h3><p>title = u’你好，hello，世界’<br>pattern = re.compile(ur’[\u4e00-\u9fa5]+’)<br>result = pattern.findall(title)<br>print (result)<br>注意到，我们在正则表达式前面加上了两个前缀 ur，其中 r 表示使用原始字符串，u 表示是 unicode 字符串。<br>执行结果:<br>[u’\u4f60\u597d’, u’\u4e16\u754c’]</p>
-<h3 id="贪婪模式和非贪婪模式的差别"><a href="#贪婪模式和非贪婪模式的差别" class="headerlink" title="贪婪模式和非贪婪模式的差别"></a>贪婪模式和非贪婪模式的差别</h3><p>决定了尽可能多匹配 b，所以a后面所有的 b 都出现了。<br>使用非贪婪的数量词的正则表达式ab*?，匹配结果： a。<br>即使前面有 *，但是 ? 决定了尽可能少匹配 b，所以没有 b。<br>禁止贪婪不匹配最后一个字符</p>
-<p>使用非贪婪的数量词的正则表达式：<div>.*?</div><br>匹配结果：<div>test1</div><br>正则表达式二采用的是非贪婪模式，在匹配到第一个“</div>”时使整个表达式匹配成功，由于采用的是非贪婪模式，所以结束匹配，不再向右尝试，匹配结果为“<div>test1</div>”。</p>
+        <h1 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h1><p>爬虫基础<br>爬虫分为通用爬虫和聚焦爬虫 通用爬虫应用搜索<br>专注爬一个页面叫做聚焦爬虫 基础</p>
+<a id="more"></a>
 
+<h3 id="网络协议"><a href="#网络协议" class="headerlink" title="网络协议"></a>网络协议</h3><p>HTTP协议（HyperText Transfer Protocol，超文本传输协议）：是一种发布和接收 HTML页面的方法。 HTTPS（Hypertext Transfer Protocol over Secure Socket Layer）简单讲是HTTP的安全版，在HTTP下加 入SSL层。<br>SSL（Secure Sockets Layer 安全套接层）主要用于Web的安全传输协议，在传输层对网络连接进行加 密，保障在Internet上数据传输的安全。<br>HTTP的端口号为80，<br>HTTPS的端口号为443<br>Cookie 和 Session：<br>Cookie：通过在 客户端 记录的信息确定用户的身份。 Session：通过在 服务器端 记录的信息确定用户的身份</p>
+<h3 id="urllib的包含的模块"><a href="#urllib的包含的模块" class="headerlink" title="urllib的包含的模块"></a>urllib的包含的模块</h3><blockquote>
+<p>urllib.request    可以用来发送request和获取request的结果<br>urllib.error    包含了urllib.request产生的异常<br>urllib.parse    用来解析和处理URL<br>urllib.robotparse    用来解析页面的robots.txt文件<br>同时它还带有处理 authenticaton （授权验证）， redirections （重定向)， cookies (浏览器Cookies）以及其它内容。<br>通过输出结果可以发现它是一个 HTTPResposne 类型的对象<br>request.urlopen()详解<br>urllib.request.urlopen(url, data=None, [timeout, ]*, cafile=None, capath=None, cadefault=False, context=None)</p>
+</blockquote>
+<h4 id="Request"><a href="#Request" class="headerlink" title="Request"></a>Request</h4><blockquote>
+<p>第一个 url 参数是请求 URL，这个是必传参数，其他的都是可选参数。<br>第二个 data 参数如果要传必须传 bytes（字节流）类型的，如果是一个字典，可以先用 urllib.parse 模块里的 urlencode() 编码。<br>第三个 headers 参数是一个字典，这个就是 Request Headers 了，你可以在构造 Request 时通过 headers 参数直接构造，也可以通过调用 Request 实例的 dd_header() 方法来添加, Request Headers 最常用的用法就是通过修改 User-Agent 来伪装浏览器，默认的 User-Agent 是 Python-urllib，我们可以通过修改它来伪装&gt;浏览器。<br>第四个 origin_req_host 参数指的是请求方的 host 名称或者 IP 地址。<br>第五个unverifiable 参数指的是这个请求是否是无法验证的，默认是False。意思就是说用户没有足够权限来选择接收这个请求的结果。例如我们请求一个 HTML 文档中的图片，但&gt;&gt;是我们没有自动抓取图像的权限，这时 unverifiable 的值就是 True。<br>第六个 method 参数是一个字符串，它用来指示请求使用的方法，比如GET，POST，PUT等等。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">### 访问方法</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">### requests</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">requests.get(data&#x3D;formdata)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">requests.post(url&#x3D;base_url,data&#x3D;formdata)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">response.encoding &#x3D; response.apparent_encoding #编码格式</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">### request</span></pre></td></tr></table></figure>
+<p>req = request.Request(url=base, headers=header)搭建请求<br>req = request.urlopen(req)#发送请求<br>print(req.read().decode(“utf-8”))#的奥数据<br>qs={“kw”:content}<br>content = parse.urlencode(qs)<br> #下载函数<br>request.urlretrieve(url,”./插图.jpg”,Schedule)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">### 写入</span></pre></td></tr></table></figure>
+<p>json数据<br>with open(“douban.json”,”a+”,encoding=”utf-8”) as f:<br>f.write(json.dumps(i,ensure_ascii=False)+”\n”)<br>写入图片<br>name = path.split(“/“)[-1]<br>    with open(r”D:\图片\新建文件夹\gif\ “+name, ‘wb+’) as jpg:<br>    jpg.write(requests.get(path,headers=headers).content)</p>
+<pre><code># 后记</code></pre>
     </div>
 
     
@@ -257,8 +258,6 @@
       <footer class="post-footer">
           <div class="post-tags">
               <a href="/tags/python/" rel="tag"># python</a>
-              <a href="/tags/%E7%88%AC%E8%99%AB/" rel="tag"># 爬虫</a>
-              <a href="/tags/%E5%9F%BA%E7%A1%80/" rel="tag"># 基础</a>
           </div>
 
         
@@ -267,12 +266,12 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/Djang/20191205-index.html" rel="prev" title="Django框架(二)">
-      <i class="fa fa-chevron-left"></i> Django框架(二)
+    <a href="/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/20191217-%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90.html" rel="prev" title="数据分析">
+      <i class="fa fa-chevron-left"></i> 数据分析
     </a></div>
       <div class="post-nav-item">
-    <a href="/deepin/20191208-index.html" rel="next" title="deepin下搭建博客">
-      deepin下搭建博客 <i class="fa fa-chevron-right"></i>
+    <a href="/%E7%88%AC%E8%99%AB/20191217-%E5%8F%8D%E5%8F%8D%E7%88%AC%E8%99%AB.html" rel="next" title="反反爬虫">
+      反反爬虫 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -311,7 +310,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#使用方法"><span class="nav-number">1.</span> <span class="nav-text">使用方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#常用字符所代表的含义-规则前加R防止转义"><span class="nav-number">2.</span> <span class="nav-text">常用字符所代表的含义(规则前加R防止转义)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#匹配中文的的正则"><span class="nav-number">3.</span> <span class="nav-text">匹配中文的的正则</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#贪婪模式和非贪婪模式的差别"><span class="nav-number">4.</span> <span class="nav-text">贪婪模式和非贪婪模式的差别</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#引言"><span class="nav-number">1.</span> <span class="nav-text">引言</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#网络协议"><span class="nav-number">1.0.1.</span> <span class="nav-text">网络协议</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#urllib的包含的模块"><span class="nav-number">1.0.2.</span> <span class="nav-text">urllib的包含的模块</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Request"><span class="nav-number">1.0.2.1.</span> <span class="nav-text">Request</span></a></li></ol></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 

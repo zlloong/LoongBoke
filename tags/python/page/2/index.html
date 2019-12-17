@@ -46,18 +46,14 @@
   };
 </script>
 
-  <meta name="description" content="正则表达式本身是一种小型的、高度专业化的编程语言，而在python中，通过内嵌集成re模块，程序猿 们可以直接调用来实现正则匹配。正则表达式模式被编译成一系列的字节码，然后由用C编写的匹配引擎执行。">
-<meta name="keywords" content="python,爬虫,基础">
-<meta property="og:type" content="article">
-<meta property="og:title" content="正则表达式">
-<meta property="og:url" content="http:&#x2F;&#x2F;ermao7.coding.me&#x2F;python&#x2F;20191208-index.html">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="张二毛的个人博客">
+<meta property="og:url" content="http:&#x2F;&#x2F;ermao7.coding.me&#x2F;tags&#x2F;python&#x2F;page&#x2F;2&#x2F;index.html">
 <meta property="og:site_name" content="张二毛的个人博客">
-<meta property="og:description" content="正则表达式本身是一种小型的、高度专业化的编程语言，而在python中，通过内嵌集成re模块，程序猿 们可以直接调用来实现正则匹配。正则表达式模式被编译成一系列的字节码，然后由用C编写的匹配引擎执行。">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-12-17T12:02:46.211Z">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://ermao7.coding.me/python/20191208-">
+<link rel="canonical" href="http://ermao7.coding.me/tags/python/page/2/">
 
 
 <script id="page-configurations">
@@ -65,13 +61,13 @@
   CONFIG.page = {
     sidebar: "",
     isHome: false,
-    isPost: true,
+    isPost: false,
     isPage: false,
     isArchive: false
   };
 </script>
 
-  <title>正则表达式 | 张二毛的个人博客</title>
+  <title>Tag: python | 张二毛的个人博客</title>
   
 
 
@@ -180,109 +176,113 @@
           <div class="content">
             
 
-  <div class="posts-expand">
-      
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="en">
-    <link itemprop="mainEntityOfPage" href="http://ermao7.coding.me/python/20191208-index.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/zifeng.jpg">
-      <meta itemprop="name" content="张二毛">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="张二毛的个人博客">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          正则表达式
+  
+  <div class="post-block">
+    <div class="posts-collapse">
+      <div class="collection-title">
+        <h1 class="collection-header">python
+          <small>Tag</small>
         </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2019-12-08 15:28:27" itemprop="dateCreated datePublished" datetime="2019-12-08T15:28:27+08:00">2019-12-08</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2019-12-17 20:02:46" itemprop="dateModified" datetime="2019-12-17T20:02:46+08:00">2019-12-17</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/python/" itemprop="url" rel="index">
-                    <span itemprop="name">python</span>
-                  </a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
+      </div>
 
       
-        <p>正则表达式本身是一种小型的、高度专业化的编程语言，而在python中，通过内嵌集成re模块，程序猿 们可以直接调用来实现正则匹配。正则表达式模式被编译成一系列的字节码，然后由用C编写的匹配引擎执行。<br> <a id="more"></a></p>
-<h3 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h3><p>compile()<br>编译正则表达式模式，返回一个对象的模式。（可以把那些常用的正则表达式编译成正则表达式对象，这样可以提高一点效率。）<br>格式：re.compile(pattern,flags=0)</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">标志	含义</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">re.S(DOTALL)	使.匹配包括换行在内的所有字符</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">re.I（IGNORECASE）	使匹配对大小写不敏感</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">re.L（LOCALE）	做本地化识别（locale-aware)匹配，法语等</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">re.M(MULTILINE)	多行匹配，影响^和$</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">re.X(VERBOSE)	该标志通过给予更灵活的格式以便将正则表达式写得更易于理解</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">re.U 根据Unicode字符集解析字符，这个标志影响\w,\W,\b,\B</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">注意： match 和 search 是匹配一次 findall 匹配所有。</span></pre></td></tr></table></figure>
-<h3 id="常用字符所代表的含义-规则前加R防止转义"><a href="#常用字符所代表的含义-规则前加R防止转义" class="headerlink" title="常用字符所代表的含义(规则前加R防止转义)"></a>常用字符所代表的含义(规则前加R防止转义)</h3><p>\d : 匹配一个数字<br>\w : 匹配一个数字字母下划线<br>\s : 匹配空格<br>\D : 匹配非 \d<br>\W : 匹配非 \w<br>\S : 匹配非 \s<br>.: 匹配任意字符,但是不能匹配换行 ,如果加上 re.S 则匹配换行符<br>.<em>? : 非贪婪模式<br>.</em> : 贪婪模式<br><em>: 匹配 0 - N 个</em>号前边的字符<br>+: 匹配 1 - N 个+号前边的字符<br>?: 匹配 0 - 1 个?号前边的字符<br>[] : 任意字符，范围例如[a-zA-Z]所有字符都是原字符（无特殊含义）<br>[^] : 非 []内容里面的字符<br>{n} : 重复 N次<br>{m,n} : 重复 m 到 n 次<br>() : 分组<br>^ : 必须以规则开始<br>$ ：必须以规则结束</p>
-<h3 id="匹配中文的的正则"><a href="#匹配中文的的正则" class="headerlink" title="匹配中文的的正则"></a>匹配中文的的正则</h3><p>title = u’你好，hello，世界’<br>pattern = re.compile(ur’[\u4e00-\u9fa5]+’)<br>result = pattern.findall(title)<br>print (result)<br>注意到，我们在正则表达式前面加上了两个前缀 ur，其中 r 表示使用原始字符串，u 表示是 unicode 字符串。<br>执行结果:<br>[u’\u4f60\u597d’, u’\u4e16\u754c’]</p>
-<h3 id="贪婪模式和非贪婪模式的差别"><a href="#贪婪模式和非贪婪模式的差别" class="headerlink" title="贪婪模式和非贪婪模式的差别"></a>贪婪模式和非贪婪模式的差别</h3><p>决定了尽可能多匹配 b，所以a后面所有的 b 都出现了。<br>使用非贪婪的数量词的正则表达式ab*?，匹配结果： a。<br>即使前面有 *，但是 ? 决定了尽可能少匹配 b，所以没有 b。<br>禁止贪婪不匹配最后一个字符</p>
-<p>使用非贪婪的数量词的正则表达式：<div>.*?</div><br>匹配结果：<div>test1</div><br>正则表达式二采用的是非贪婪模式，在匹配到第一个“</div>”时使整个表达式匹配成功，由于采用的是非贪婪模式，所以结束匹配，不再向右尝试，匹配结果为“<div>test1</div>”。</p>
-
+    <div class="collection-year">
+      <h1 class="collection-header">2019</h1>
     </div>
 
-    
-    
-    
+  <article itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
 
-      <footer class="post-footer">
-          <div class="post-tags">
-              <a href="/tags/python/" rel="tag"># python</a>
-              <a href="/tags/%E7%88%AC%E8%99%AB/" rel="tag"># 爬虫</a>
-              <a href="/tags/%E5%9F%BA%E7%A1%80/" rel="tag"># 基础</a>
-          </div>
+      <div class="post-meta">
+        <time itemprop="dateCreated"
+              datetime="2019-12-05T21:38:10+08:00"
+              content="2019-12-05">
+          12-05
+        </time>
+      </div>
 
-        
+      <h2 class="post-title">
+          <a class="post-title-link" href="/Djang/20191205-index.html" itemprop="url">
+            <span itemprop="name">Django框架(二)</span>
+          </a>
+      </h2>
 
-
-        
-    <div class="post-nav">
-      <div class="post-nav-item">
-    <a href="/Djang/20191205-index.html" rel="prev" title="Django框架(二)">
-      <i class="fa fa-chevron-left"></i> Django框架(二)
-    </a></div>
-      <div class="post-nav-item">
-    <a href="/deepin/20191208-index.html" rel="next" title="deepin下搭建博客">
-      deepin下搭建博客 <i class="fa fa-chevron-right"></i>
-    </a></div>
-    </div>
-      </footer>
-    
+    </header>
   </article>
+
+  <article itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <div class="post-meta">
+        <time itemprop="dateCreated"
+              datetime="2019-12-04T18:51:14+08:00"
+              content="2019-12-04">
+          12-04
+        </time>
+      </div>
+
+      <h2 class="post-title">
+          <a class="post-title-link" href="/Djang/20191204-index.html" itemprop="url">
+            <span itemprop="name">Django框架 (一)</span>
+          </a>
+      </h2>
+
+    </header>
+  </article>
+
+  <article itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <div class="post-meta">
+        <time itemprop="dateCreated"
+              datetime="2019-12-03T22:43:49+08:00"
+              content="2019-12-03">
+          12-03
+        </time>
+      </div>
+
+      <h2 class="post-title">
+          <a class="post-title-link" href="/%E7%88%AC%E8%99%AB/20191203-index.html" itemprop="url">
+            <span itemprop="name">分布式爬虫</span>
+          </a>
+      </h2>
+
+    </header>
+  </article>
+
+  <article itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <div class="post-meta">
+        <time itemprop="dateCreated"
+              datetime="2019-12-03T21:22:58+08:00"
+              content="2019-12-03">
+          12-03
+        </time>
+      </div>
+
+      <h2 class="post-title">
+          <a class="post-title-link" href="/python/20191203-index.html" itemprop="url">
+            <span itemprop="name">python 装饰器</span>
+          </a>
+      </h2>
+
+    </header>
+  </article>
+
+    </div>
+  </div>
   
   
   
 
-  </div>
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/tags/python/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/tags/python/">1</a><span class="page-number current">2</span>
+  </nav>
+
 
 
           </div>
@@ -311,7 +311,6 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#使用方法"><span class="nav-number">1.</span> <span class="nav-text">使用方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#常用字符所代表的含义-规则前加R防止转义"><span class="nav-number">2.</span> <span class="nav-text">常用字符所代表的含义(规则前加R防止转义)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#匹配中文的的正则"><span class="nav-number">3.</span> <span class="nav-text">匹配中文的的正则</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#贪婪模式和非贪婪模式的差别"><span class="nav-number">4.</span> <span class="nav-text">贪婪模式和非贪婪模式的差别</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 

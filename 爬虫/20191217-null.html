@@ -46,18 +46,18 @@
   };
 </script>
 
-  <meta name="description" content="正则表达式本身是一种小型的、高度专业化的编程语言，而在python中，通过内嵌集成re模块，程序猿 们可以直接调用来实现正则匹配。正则表达式模式被编译成一系列的字节码，然后由用C编写的匹配引擎执行。">
-<meta name="keywords" content="python,爬虫,基础">
+  <meta name="description" content="引言爬虫提取经常用正则 xpath bs4 jsonpath">
+<meta name="keywords" content="python">
 <meta property="og:type" content="article">
-<meta property="og:title" content="正则表达式">
-<meta property="og:url" content="http:&#x2F;&#x2F;ermao7.coding.me&#x2F;python&#x2F;20191208-index.html">
+<meta property="og:title" content="爬虫提取">
+<meta property="og:url" content="http:&#x2F;&#x2F;ermao7.coding.me&#x2F;%E7%88%AC%E8%99%AB&#x2F;20191217-null.html">
 <meta property="og:site_name" content="张二毛的个人博客">
-<meta property="og:description" content="正则表达式本身是一种小型的、高度专业化的编程语言，而在python中，通过内嵌集成re模块，程序猿 们可以直接调用来实现正则匹配。正则表达式模式被编译成一系列的字节码，然后由用C编写的匹配引擎执行。">
+<meta property="og:description" content="引言爬虫提取经常用正则 xpath bs4 jsonpath">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-12-17T12:02:46.211Z">
+<meta property="og:updated_time" content="2019-12-17T13:21:30.041Z">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://ermao7.coding.me/python/20191208-">
+<link rel="canonical" href="http://ermao7.coding.me/%E7%88%AC%E8%99%AB/20191217-null.html">
 
 
 <script id="page-configurations">
@@ -71,7 +71,7 @@
   };
 </script>
 
-  <title>正则表达式 | 张二毛的个人博客</title>
+  <title>爬虫提取 | 张二毛的个人博客</title>
   
 
 
@@ -185,7 +185,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="en">
-    <link itemprop="mainEntityOfPage" href="http://ermao7.coding.me/python/20191208-index.html">
+    <link itemprop="mainEntityOfPage" href="http://ermao7.coding.me/%E7%88%AC%E8%99%AB/20191217-null.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/zifeng.jpg">
@@ -198,7 +198,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          正则表达式
+          爬虫提取
         </h1>
 
         <div class="post-meta">
@@ -207,24 +207,18 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
+              
 
-              <time title="Created: 2019-12-08 15:28:27" itemprop="dateCreated datePublished" datetime="2019-12-08T15:28:27+08:00">2019-12-08</time>
+              <time title="Created: 2019-12-17 20:32:49 / Modified: 21:21:30" itemprop="dateCreated datePublished" datetime="2019-12-17T20:32:49+08:00">2019-12-17</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2019-12-17 20:02:46" itemprop="dateModified" datetime="2019-12-17T20:02:46+08:00">2019-12-17</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
               <span class="post-meta-item-text">In</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/python/" itemprop="url" rel="index">
-                    <span itemprop="name">python</span>
+                  <a href="/categories/%E7%88%AC%E8%99%AB/" itemprop="url" rel="index">
+                    <span itemprop="name">爬虫</span>
                   </a>
                 </span>
             </span>
@@ -240,13 +234,16 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>正则表达式本身是一种小型的、高度专业化的编程语言，而在python中，通过内嵌集成re模块，程序猿 们可以直接调用来实现正则匹配。正则表达式模式被编译成一系列的字节码，然后由用C编写的匹配引擎执行。<br> <a id="more"></a></p>
-<h3 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h3><p>compile()<br>编译正则表达式模式，返回一个对象的模式。（可以把那些常用的正则表达式编译成正则表达式对象，这样可以提高一点效率。）<br>格式：re.compile(pattern,flags=0)</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">标志	含义</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">re.S(DOTALL)	使.匹配包括换行在内的所有字符</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">re.I（IGNORECASE）	使匹配对大小写不敏感</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">re.L（LOCALE）	做本地化识别（locale-aware)匹配，法语等</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">re.M(MULTILINE)	多行匹配，影响^和$</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">re.X(VERBOSE)	该标志通过给予更灵活的格式以便将正则表达式写得更易于理解</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">re.U 根据Unicode字符集解析字符，这个标志影响\w,\W,\b,\B</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">注意： match 和 search 是匹配一次 findall 匹配所有。</span></pre></td></tr></table></figure>
-<h3 id="常用字符所代表的含义-规则前加R防止转义"><a href="#常用字符所代表的含义-规则前加R防止转义" class="headerlink" title="常用字符所代表的含义(规则前加R防止转义)"></a>常用字符所代表的含义(规则前加R防止转义)</h3><p>\d : 匹配一个数字<br>\w : 匹配一个数字字母下划线<br>\s : 匹配空格<br>\D : 匹配非 \d<br>\W : 匹配非 \w<br>\S : 匹配非 \s<br>.: 匹配任意字符,但是不能匹配换行 ,如果加上 re.S 则匹配换行符<br>.<em>? : 非贪婪模式<br>.</em> : 贪婪模式<br><em>: 匹配 0 - N 个</em>号前边的字符<br>+: 匹配 1 - N 个+号前边的字符<br>?: 匹配 0 - 1 个?号前边的字符<br>[] : 任意字符，范围例如[a-zA-Z]所有字符都是原字符（无特殊含义）<br>[^] : 非 []内容里面的字符<br>{n} : 重复 N次<br>{m,n} : 重复 m 到 n 次<br>() : 分组<br>^ : 必须以规则开始<br>$ ：必须以规则结束</p>
-<h3 id="匹配中文的的正则"><a href="#匹配中文的的正则" class="headerlink" title="匹配中文的的正则"></a>匹配中文的的正则</h3><p>title = u’你好，hello，世界’<br>pattern = re.compile(ur’[\u4e00-\u9fa5]+’)<br>result = pattern.findall(title)<br>print (result)<br>注意到，我们在正则表达式前面加上了两个前缀 ur，其中 r 表示使用原始字符串，u 表示是 unicode 字符串。<br>执行结果:<br>[u’\u4f60\u597d’, u’\u4e16\u754c’]</p>
-<h3 id="贪婪模式和非贪婪模式的差别"><a href="#贪婪模式和非贪婪模式的差别" class="headerlink" title="贪婪模式和非贪婪模式的差别"></a>贪婪模式和非贪婪模式的差别</h3><p>决定了尽可能多匹配 b，所以a后面所有的 b 都出现了。<br>使用非贪婪的数量词的正则表达式ab*?，匹配结果： a。<br>即使前面有 *，但是 ? 决定了尽可能少匹配 b，所以没有 b。<br>禁止贪婪不匹配最后一个字符</p>
-<p>使用非贪婪的数量词的正则表达式：<div>.*?</div><br>匹配结果：<div>test1</div><br>正则表达式二采用的是非贪婪模式，在匹配到第一个“</div>”时使整个表达式匹配成功，由于采用的是非贪婪模式，所以结束匹配，不再向右尝试，匹配结果为“<div>test1</div>”。</p>
+        <h1 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h1><p>爬虫提取经常用正则 xpath bs4 jsonpath</p>
+<a id="more"></a>
+<h3 id="正则"><a href="#正则" class="headerlink" title="正则"></a>正则</h3><p><a href="http://ermao7.coding.me/python/20191208-index.html">正则</a></p>
+<h3 id="xpath"><a href="#xpath" class="headerlink" title="xpath"></a>xpath</h3><blockquote>
+<p>/ 从根节点选取。xpath(‘/div’)从根节点上选取div节点<br>// 从匹配选择的当前节点选择文档中的节点，而不考虑它们的位置。xpath(‘//div’)从当前节点选取含有div节点的标签<br>. 选取当前节点。xpath(‘./div’)选取当前节点下的div标签<br>.. 选取当前节点的父节点。 xpath(‘../’)回到上一级节点<br>@ 选取属性。xpath(“//div[@id=’1001’]”)获取div标签中，含有ID属性且值为1001的标签 </table></p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">from lxml import etree</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">print(html.xpath(&#39;&#x2F;&#x2F;a[@title&#x3D;&quot;hjq&quot; and @name&#x3D;&quot;hhh&quot;]&#x2F;&#x2F;h6&#x2F;text()&#39;))</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">print(html.xpath(&quot;&#x2F;&#x2F;a&quot;))</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">print(html.xpath(&quot;&#x2F;descendant::a&quot;))#当前节点的所有后代元素  相对路径</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">print(html.xpath(&quot;descendant::a&#x2F;child::p&quot;))</span></pre></td></tr></table></figure>
+<h3 id="bs4"><a href="#bs4" class="headerlink" title="bs4"></a>bs4</h3><p>from bs4 import BeautifulSoup<br>test=BeautifulSoup(a.text,”lxml”)<br>a=test.select(“body &gt; div.layui”)<br>根据标签获取</p>
+<h3 id="jsonpath"><a href="#jsonpath" class="headerlink" title="jsonpath"></a>jsonpath</h3><p>list1 = json.loads(response.decode(‘utf-8’))<br>response_json = json.loads(response.read().decode(“utf-8”))<br>print(jsonpath.jsonpath(response_json,’$..[?(@.name==”济宁”)]’))</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">$	根节点。查询的根节点对象，用于表示一个json数据，可以是数组或对象</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">@	当前节点。过滤器断言（filter predicate）处理的当前节点对象，类似于java中的this字段</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">*	通配符，可以表示一个名字或数字</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">..	选择所有符合条件的节点。可以理解为递归搜索，Deep scan. Available anywhere a name is required.</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">. &lt; name &gt;or [&lt; name &gt;]	表示一个子节点</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">[‘&lt; name&gt;’ (, ‘&lt; name &gt;’)]	表示一个或多个子节点</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">[&lt; number &gt; (, &lt; number &gt;)]	表示一个或多个数组下标</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">[start:end]	数组片段，区间为[start,end),不包含end</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">[?(&lt; expression &gt;)]	过滤器表达式，表达式结果必须是boolea</span></pre></td></tr></table></figure>
 
     </div>
 
@@ -257,8 +254,6 @@
       <footer class="post-footer">
           <div class="post-tags">
               <a href="/tags/python/" rel="tag"># python</a>
-              <a href="/tags/%E7%88%AC%E8%99%AB/" rel="tag"># 爬虫</a>
-              <a href="/tags/%E5%9F%BA%E7%A1%80/" rel="tag"># 基础</a>
           </div>
 
         
@@ -267,12 +262,12 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/Djang/20191205-index.html" rel="prev" title="Django框架(二)">
-      <i class="fa fa-chevron-left"></i> Django框架(二)
+    <a href="/%E7%88%AC%E8%99%AB/20191217-%E5%8F%8D%E5%8F%8D%E7%88%AC%E8%99%AB.html" rel="prev" title="反反爬虫">
+      <i class="fa fa-chevron-left"></i> 反反爬虫
     </a></div>
       <div class="post-nav-item">
-    <a href="/deepin/20191208-index.html" rel="next" title="deepin下搭建博客">
-      deepin下搭建博客 <i class="fa fa-chevron-right"></i>
+    <a href="/%E7%88%AC%E8%99%AB/20191217-ip%E5%9C%B0%E5%9D%80%E6%B1%A0.html" rel="next" title="ip地址池">
+      ip地址池 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -311,7 +306,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#使用方法"><span class="nav-number">1.</span> <span class="nav-text">使用方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#常用字符所代表的含义-规则前加R防止转义"><span class="nav-number">2.</span> <span class="nav-text">常用字符所代表的含义(规则前加R防止转义)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#匹配中文的的正则"><span class="nav-number">3.</span> <span class="nav-text">匹配中文的的正则</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#贪婪模式和非贪婪模式的差别"><span class="nav-number">4.</span> <span class="nav-text">贪婪模式和非贪婪模式的差别</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#引言"><span class="nav-number">1.</span> <span class="nav-text">引言</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#正则"><span class="nav-number">1.0.1.</span> <span class="nav-text">正则</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#xpath"><span class="nav-number">1.0.2.</span> <span class="nav-text">xpath</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#bs4"><span class="nav-number">1.0.3.</span> <span class="nav-text">bs4</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#jsonpath"><span class="nav-number">1.0.4.</span> <span class="nav-text">jsonpath</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
