@@ -46,18 +46,18 @@
   };
 </script>
 
-  <meta name="description" content="面向对象特点内聚指模块的功能强度的度量，即一个模块内部各个元素彼此结合的紧密程度的度量。若一个模块内各元素（语名之间、程序段之间）联系的越紧密，则它的内聚性就越高。耦合指软件系统结构中各模块间相互联系紧密程度的一种度量。模块之间联系越紧密，其耦合性就越强，模块的独立性则越差。模块间耦合高低取决于模块间接口的复杂性、调用的方式及传递的信息。">
-<meta name="keywords" content="编程语言,编程思想">
+  <meta name="description" content="MySQL 数据操作 DML  数据的DML操作：添加数据，修改数据，删除数据">
+<meta name="keywords" content="基础">
 <meta property="og:type" content="article">
-<meta property="og:title" content="python面向对象">
-<meta property="og:url" content="http:&#x2F;&#x2F;ermao7.coding.me&#x2F;python&#x2F;20191204-index.html">
+<meta property="og:title" content="Mysql2">
+<meta property="og:url" content="http:&#x2F;&#x2F;ermao7.coding.me&#x2F;%E6%95%B0%E6%8D%AE%E5%BA%93&#x2F;20191213-MySQL2.html">
 <meta property="og:site_name" content="张二毛的个人博客">
-<meta property="og:description" content="面向对象特点内聚指模块的功能强度的度量，即一个模块内部各个元素彼此结合的紧密程度的度量。若一个模块内各元素（语名之间、程序段之间）联系的越紧密，则它的内聚性就越高。耦合指软件系统结构中各模块间相互联系紧密程度的一种度量。模块之间联系越紧密，其耦合性就越强，模块的独立性则越差。模块间耦合高低取决于模块间接口的复杂性、调用的方式及传递的信息。">
+<meta property="og:description" content="MySQL 数据操作 DML  数据的DML操作：添加数据，修改数据，删除数据">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-12-05T13:34:56.441Z">
+<meta property="og:updated_time" content="2019-12-17T01:52:12.255Z">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://ermao7.coding.me/python/20191204-">
+<link rel="canonical" href="http://ermao7.coding.me/%E6%95%B0%E6%8D%AE%E5%BA%93/20191213-MySQL2.html">
 
 
 <script id="page-configurations">
@@ -71,7 +71,7 @@
   };
 </script>
 
-  <title>python面向对象 | 张二毛的个人博客</title>
+  <title>Mysql2 | 张二毛的个人博客</title>
   
 
 
@@ -185,7 +185,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="en">
-    <link itemprop="mainEntityOfPage" href="http://ermao7.coding.me/python/20191204-index.html">
+    <link itemprop="mainEntityOfPage" href="http://ermao7.coding.me/%E6%95%B0%E6%8D%AE%E5%BA%93/20191213-MySQL2.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/zifeng.jpg">
@@ -198,7 +198,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          python面向对象
+          Mysql2
         </h1>
 
         <div class="post-meta">
@@ -208,14 +208,14 @@
               </span>
               <span class="post-meta-item-text">Posted on</span>
 
-              <time title="Created: 2019-12-04 21:15:21" itemprop="dateCreated datePublished" datetime="2019-12-04T21:15:21+08:00">2019-12-04</time>
+              <time title="Created: 2019-12-13 22:11:02" itemprop="dateCreated datePublished" datetime="2019-12-13T22:11:02+08:00">2019-12-13</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2019-12-05 21:34:56" itemprop="dateModified" datetime="2019-12-05T21:34:56+08:00">2019-12-05</time>
+                <time title="Modified: 2019-12-17 09:52:12" itemprop="dateModified" datetime="2019-12-17T09:52:12+08:00">2019-12-17</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -223,8 +223,8 @@
               </span>
               <span class="post-meta-item-text">In</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/python/" itemprop="url" rel="index">
-                    <span itemprop="name">python</span>
+                  <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" itemprop="url" rel="index">
+                    <span itemprop="name">数据库</span>
                   </a>
                 </span>
             </span>
@@ -240,17 +240,31 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>面向对象特点<br>内聚指模块的功能强度的度量，即一个模块内部各个元素彼此结合的紧密程度的度量。若一个模块内各元素（语名之间、程序段之间）联系的越紧密，则它的内聚性就越高。<br>耦合指软件系统结构中各模块间相互联系紧密程度的一种度量。模块之间联系越紧密，其耦合性就越强，模块的独立性则越差。模块间耦合高低取决于模块间接口的复杂性、调用的方式及传递的信息。</p>
+        <p>MySQL 数据操作 DML</p>
+<blockquote>
+<p>数据的DML操作：添加数据，修改数据，删除数据</p>
+</blockquote>
 <a id="more"></a>
-<h3 id="类的描述"><a href="#类的描述" class="headerlink" title="类的描述"></a>类的描述</h3><p>类 抽象的：由类制作出对象叫做实例化<br>类只有俩种 成员属性成员方法<br>检测类成员<br>slef 自己 相当于Java this</p>
-<h3 id="面向对象都具有三大特性：封装，继承-和-多态"><a href="#面向对象都具有三大特性：封装，继承-和-多态" class="headerlink" title="面向对象都具有三大特性：封装，继承 和 多态"></a>面向对象都具有三大特性：封装，继承 和 多态</h3><h4 id="封装"><a href="#封装" class="headerlink" title="封装"></a>封装</h4><p>private<br>加函数名前<em>_<br>私有化封装：在成员名称前添加2个_即可<br>protected 原则类外不可以 没有实现<br>函数名前</em><br>public 都可以</p>
-<h4 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h4><p>继承</p>
-<h5 id="单继承"><a href="#单继承" class="headerlink" title="单继承"></a>单继承</h5><p>继承就是可以获取另外一个类中的成员属性和成员方法。(并非所有成员)<br>作用：继承的作用是增加代码的复用性，节省不必要的重复代码，提高开发效率，同时可以设置类之间的关系。<br>class 子类(父类)：#继承操作的关键步骤<br>    pass<br>万物皆对象 object<br>super<br>在单继承的情况下，super()永远调用的是父类/父对象</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">super()和父类没有任何实质性的关系，只是有时候能调用到父类而已</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">super().方法()      #python3的格式</span></pre></td></tr></table></figure>
-<p><a href="适合类">父类名.方法()</a>  或者  <a href="适合对象">super().方法()</a><br>3.子类继承父类并不会将父类的所有成员复制到子类当中去，访问父类成员是间接通过父类来访问的，<br>5.子类可以重载父类中的方法，只需要设置和父类指定成员相同的名称即可实现重载，重载之后的成员，子类只会访问当前类中的成员，而不会调用父类中同名的成员</p>
-<h5 id="多继承"><a href="#多继承" class="headerlink" title="多继承"></a>多继承</h5><p>python 可以多继承 但一般不用<br>多个父类具有相同的成员时，子类继承[继承列表]中第一个类的方法<br>Python 所以python使用 super() 类来解决了多继承的菱形继承问题<br>1.子类永远在父类的前面<br>2.如果继承了多个父类，那么按照()中的顺序在列表中摆放<br>多继承调用时相当递归<br>super()当出现多继承时，调用的顺序是根据类实例化时的执行顺序决定。<br>mixin 设计模式<br>相当于设置多个对象根据没个类属性不同来分别调用 Java中封装类 只调用所需要的 </p>
-<h5 id="重载"><a href="#重载" class="headerlink" title="重载"></a>重载</h5><p>子类中如果重载父类的方法，并且还想将重载的父类方法借调过来使用，可以在重载的方法中使用如下方法</p>
-<h4 id="多态"><a href="#多态" class="headerlink" title="多态"></a>多态</h4><p>多态，多种状态！就是一个类，根据不同的情况，相同的方法产生不同的结果。</p>
+<h3 id="增加-insert"><a href="#增加-insert" class="headerlink" title="增加 insert"></a>增加 insert</h3><pre><code>insert into 表名[(字段列表)] values(值列表...)
+插入单行的时候使用VALUES，在插入多行的时候使用VALUE 这样比较快一点</code></pre><p>批量添加用逗号分隔 在value后</p>
+<h3 id="修改-update"><a href="#修改-update" class="headerlink" title="修改 update"></a>修改 update</h3><pre><code>update 表名 set 字段1=值1,字段2=值2,字段n=值n... where 条件</code></pre><h3 id="删除-delete"><a href="#删除-delete" class="headerlink" title="删除 delete"></a>删除 delete</h3><pre><code>elete from 表名 [where 条件]
+between 20 and 30 区间and</code></pre><h3 id="查询-selelct"><a href="#查询-selelct" class="headerlink" title="查询 selelct"></a>查询 selelct</h3><p>select * from stu;</p>
+<h3 id="WHERE条件"><a href="#WHERE条件" class="headerlink" title="WHERE条件"></a>WHERE条件</h3><p>你可以在 WHERE 子句中指定任何条件。 你可以使用 AND 或者 OR 指定一个或多个条件。 WHERE 子句也可以运用于 SQL 的 DELETE 或者 UPDATE 命令。 WHERE 子句类似于程序语言中的 if 条件，根据 MySQL 表中的字段值来读取指定的数据。</p>
+<h4 id="like字句-模糊查找"><a href="#like字句-模糊查找" class="headerlink" title="like字句 模糊查找"></a>like字句 模糊查找</h4><p>–9. 查询name字段值是以zh开头的所有信息<br>select * from stu where name like “zh%”;<br>select * from stu where name regexp  “^zh”; –正则写法</p>
+<p>–11. 查询姓名是任意四位字符构成的信息。</p>
+<blockquote>
+<p>mysql&gt; select * from stu where name like “____”;<br>mysql&gt; select * from stu where name regexp “^[a-z0-9]{4}$”;</p>
+</blockquote>
+<h3 id="MySQL的统计函数（聚合函数）"><a href="#MySQL的统计函数（聚合函数）" class="headerlink" title="MySQL的统计函数（聚合函数）"></a>MySQL的统计函数（聚合函数）</h3><p>max() min() count() sum() avg()<br> 获取学生表中最大、最小以及平均年龄是多少？<br>mysql&gt; select max(age),min(age),avg(age) from stu;  函数可以用在字段<br>– 获取学生表中男生m的数量<br>mysql&gt; select count(*) from stu where sex=’m’;</p>
+<h3 id="分组"><a href="#分组" class="headerlink" title="分组"></a>分组</h3><p>GROUP BY 语句 分组<br>###ORDER BY 排序 – asc 默认升序 desc 降序<br>select * from stu order by age asc;  –默认asc升序 可省略<br>– 查询学生信息，按班级做升序排序，相同班级按年龄降序排序<br>mysql&gt; select * from stu order by classid asc,age desc;</p>
+<h3 id="页数"><a href="#页数" class="headerlink" title="页数"></a>页数</h3><p>limit 关键字 查询部分数据<br>mysql&gt; select * from stu limit 5; 前五条<br>– 排除前2条后再获取4条信息<br>mysql&gt; select * from stu limit 2,4;</p>
+<p>页号     limit语句                起始分页码数值是页大小的几倍。<br>页数为起始分页码数值是页大小的几倍</p>
+<h3 id="数据库导出导入"><a href="#数据库导出导入" class="headerlink" title="数据库导出导入"></a>数据库导出导入</h3><blockquote>
+<p>– 将lamp138库导出<br>D:&gt;mysqldump -u root -p lamp138 &gt;lamp138.sql<br>Enter password:<br>—- 将lamp138库中的stu表导出<br>D:&gt;mysqldump -u root -p lamp138 stu &gt;lamp138_stu.sql<br>Enter password:</p>
+</blockquote>
+<blockquote>
+<p>– 将lamp138库导入<br>D:&gt;mysql -u root -p lamp138&lt;lamp138.sql<br>Enter password:<br>– 将lamp138库中stu表导入<br>D:&gt;mysql -u root -p lamp138&lt;lamp138_stu.sql<br>Enter password:</p>
+</blockquote>
 
     </div>
 
@@ -260,8 +274,7 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" rel="tag"># 编程语言</a>
-              <a href="/tags/%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/" rel="tag"># 编程思想</a>
+              <a href="/tags/%E5%9F%BA%E7%A1%80/" rel="tag"># 基础</a>
           </div>
 
         
@@ -270,12 +283,12 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/Djang/20191204-index.html" rel="prev" title="Django框架 (一)">
-      <i class="fa fa-chevron-left"></i> Django框架 (一)
+    <a href="/%E6%95%B0%E6%8D%AE%E5%BA%93/20191213-index.html" rel="prev" title="Mysql">
+      <i class="fa fa-chevron-left"></i> Mysql
     </a></div>
       <div class="post-nav-item">
-    <a href="/python/20191205-index.html" rel="next" title="python面向对象(二)">
-      python面向对象(二) <i class="fa fa-chevron-right"></i>
+    <a href="/%E6%95%B0%E6%8D%AE%E5%BA%93/20191213-MySQL%E9%AB%98%E7%BA%A7.html" rel="next" title="Mysql高级">
+      Mysql高级 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -314,7 +327,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#类的描述"><span class="nav-number">1.</span> <span class="nav-text">类的描述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#面向对象都具有三大特性：封装，继承-和-多态"><span class="nav-number">2.</span> <span class="nav-text">面向对象都具有三大特性：封装，继承 和 多态</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#封装"><span class="nav-number">2.1.</span> <span class="nav-text">封装</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#继承"><span class="nav-number">2.2.</span> <span class="nav-text">继承</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#单继承"><span class="nav-number">2.2.1.</span> <span class="nav-text">单继承</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#多继承"><span class="nav-number">2.2.2.</span> <span class="nav-text">多继承</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#重载"><span class="nav-number">2.2.3.</span> <span class="nav-text">重载</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#多态"><span class="nav-number">2.3.</span> <span class="nav-text">多态</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#增加-insert"><span class="nav-number">1.</span> <span class="nav-text">增加 insert</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#修改-update"><span class="nav-number">2.</span> <span class="nav-text">修改 update</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#删除-delete"><span class="nav-number">3.</span> <span class="nav-text">删除 delete</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#查询-selelct"><span class="nav-number">4.</span> <span class="nav-text">查询 selelct</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#WHERE条件"><span class="nav-number">5.</span> <span class="nav-text">WHERE条件</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#like字句-模糊查找"><span class="nav-number">5.1.</span> <span class="nav-text">like字句 模糊查找</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#MySQL的统计函数（聚合函数）"><span class="nav-number">6.</span> <span class="nav-text">MySQL的统计函数（聚合函数）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#分组"><span class="nav-number">7.</span> <span class="nav-text">分组</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#页数"><span class="nav-number">8.</span> <span class="nav-text">页数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数据库导出导入"><span class="nav-number">9.</span> <span class="nav-text">数据库导出导入</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 

@@ -46,18 +46,18 @@
   };
 </script>
 
-  <meta name="description" content="面向对象特点内聚指模块的功能强度的度量，即一个模块内部各个元素彼此结合的紧密程度的度量。若一个模块内各元素（语名之间、程序段之间）联系的越紧密，则它的内聚性就越高。耦合指软件系统结构中各模块间相互联系紧密程度的一种度量。模块之间联系越紧密，其耦合性就越强，模块的独立性则越差。模块间耦合高低取决于模块间接口的复杂性、调用的方式及传递的信息。">
-<meta name="keywords" content="编程语言,编程思想">
+  <meta name="description" content="引言在deepin开发下的各种问题">
+<meta name="keywords" content="bug">
 <meta property="og:type" content="article">
-<meta property="og:title" content="python面向对象">
-<meta property="og:url" content="http:&#x2F;&#x2F;ermao7.coding.me&#x2F;python&#x2F;20191204-index.html">
+<meta property="og:title" content="deepin BUG">
+<meta property="og:url" content="http:&#x2F;&#x2F;ermao7.coding.me&#x2F;deepin&#x2F;20191216-deepin.html">
 <meta property="og:site_name" content="张二毛的个人博客">
-<meta property="og:description" content="面向对象特点内聚指模块的功能强度的度量，即一个模块内部各个元素彼此结合的紧密程度的度量。若一个模块内各元素（语名之间、程序段之间）联系的越紧密，则它的内聚性就越高。耦合指软件系统结构中各模块间相互联系紧密程度的一种度量。模块之间联系越紧密，其耦合性就越强，模块的独立性则越差。模块间耦合高低取决于模块间接口的复杂性、调用的方式及传递的信息。">
+<meta property="og:description" content="引言在deepin开发下的各种问题">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-12-05T13:34:56.441Z">
+<meta property="og:updated_time" content="2019-12-16T14:14:09.975Z">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://ermao7.coding.me/python/20191204-">
+<link rel="canonical" href="http://ermao7.coding.me/deepin/20191216-deepin.html">
 
 
 <script id="page-configurations">
@@ -71,7 +71,7 @@
   };
 </script>
 
-  <title>python面向对象 | 张二毛的个人博客</title>
+  <title>deepin BUG | 张二毛的个人博客</title>
   
 
 
@@ -185,7 +185,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="en">
-    <link itemprop="mainEntityOfPage" href="http://ermao7.coding.me/python/20191204-index.html">
+    <link itemprop="mainEntityOfPage" href="http://ermao7.coding.me/deepin/20191216-deepin.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/zifeng.jpg">
@@ -198,7 +198,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          python面向对象
+          deepin BUG
         </h1>
 
         <div class="post-meta">
@@ -207,24 +207,18 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
+              
 
-              <time title="Created: 2019-12-04 21:15:21" itemprop="dateCreated datePublished" datetime="2019-12-04T21:15:21+08:00">2019-12-04</time>
+              <time title="Created: 2019-12-16 22:11:36 / Modified: 22:14:09" itemprop="dateCreated datePublished" datetime="2019-12-16T22:11:36+08:00">2019-12-16</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2019-12-05 21:34:56" itemprop="dateModified" datetime="2019-12-05T21:34:56+08:00">2019-12-05</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
               <span class="post-meta-item-text">In</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/python/" itemprop="url" rel="index">
-                    <span itemprop="name">python</span>
+                  <a href="/categories/deepin/" itemprop="url" rel="index">
+                    <span itemprop="name">deepin</span>
                   </a>
                 </span>
             </span>
@@ -240,17 +234,12 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>面向对象特点<br>内聚指模块的功能强度的度量，即一个模块内部各个元素彼此结合的紧密程度的度量。若一个模块内各元素（语名之间、程序段之间）联系的越紧密，则它的内聚性就越高。<br>耦合指软件系统结构中各模块间相互联系紧密程度的一种度量。模块之间联系越紧密，其耦合性就越强，模块的独立性则越差。模块间耦合高低取决于模块间接口的复杂性、调用的方式及传递的信息。</p>
+        <h1 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h1><p>在deepin开发下的各种问题</p>
 <a id="more"></a>
-<h3 id="类的描述"><a href="#类的描述" class="headerlink" title="类的描述"></a>类的描述</h3><p>类 抽象的：由类制作出对象叫做实例化<br>类只有俩种 成员属性成员方法<br>检测类成员<br>slef 自己 相当于Java this</p>
-<h3 id="面向对象都具有三大特性：封装，继承-和-多态"><a href="#面向对象都具有三大特性：封装，继承-和-多态" class="headerlink" title="面向对象都具有三大特性：封装，继承 和 多态"></a>面向对象都具有三大特性：封装，继承 和 多态</h3><h4 id="封装"><a href="#封装" class="headerlink" title="封装"></a>封装</h4><p>private<br>加函数名前<em>_<br>私有化封装：在成员名称前添加2个_即可<br>protected 原则类外不可以 没有实现<br>函数名前</em><br>public 都可以</p>
-<h4 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h4><p>继承</p>
-<h5 id="单继承"><a href="#单继承" class="headerlink" title="单继承"></a>单继承</h5><p>继承就是可以获取另外一个类中的成员属性和成员方法。(并非所有成员)<br>作用：继承的作用是增加代码的复用性，节省不必要的重复代码，提高开发效率，同时可以设置类之间的关系。<br>class 子类(父类)：#继承操作的关键步骤<br>    pass<br>万物皆对象 object<br>super<br>在单继承的情况下，super()永远调用的是父类/父对象</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">super()和父类没有任何实质性的关系，只是有时候能调用到父类而已</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">super().方法()      #python3的格式</span></pre></td></tr></table></figure>
-<p><a href="适合类">父类名.方法()</a>  或者  <a href="适合对象">super().方法()</a><br>3.子类继承父类并不会将父类的所有成员复制到子类当中去，访问父类成员是间接通过父类来访问的，<br>5.子类可以重载父类中的方法，只需要设置和父类指定成员相同的名称即可实现重载，重载之后的成员，子类只会访问当前类中的成员，而不会调用父类中同名的成员</p>
-<h5 id="多继承"><a href="#多继承" class="headerlink" title="多继承"></a>多继承</h5><p>python 可以多继承 但一般不用<br>多个父类具有相同的成员时，子类继承[继承列表]中第一个类的方法<br>Python 所以python使用 super() 类来解决了多继承的菱形继承问题<br>1.子类永远在父类的前面<br>2.如果继承了多个父类，那么按照()中的顺序在列表中摆放<br>多继承调用时相当递归<br>super()当出现多继承时，调用的顺序是根据类实例化时的执行顺序决定。<br>mixin 设计模式<br>相当于设置多个对象根据没个类属性不同来分别调用 Java中封装类 只调用所需要的 </p>
-<h5 id="重载"><a href="#重载" class="headerlink" title="重载"></a>重载</h5><p>子类中如果重载父类的方法，并且还想将重载的父类方法借调过来使用，可以在重载的方法中使用如下方法</p>
-<h4 id="多态"><a href="#多态" class="headerlink" title="多态"></a>多态</h4><p>多态，多种状态！就是一个类，根据不同的情况，相同的方法产生不同的结果。</p>
+<p>当系统卡死时不要乱按开机键强关系统，可以优雅的按 Alt+SysRq+R+S+E+I+U+B 进行安全重启（Alt+SysRq要一直按着）<br>###系统源</p>
+<blockquote>
+<p>deb [by-hash=force] <a href="http://packages.deepin.com/deepin" target="_blank" rel="noopener">http://packages.deepin.com/deepin</a> panda main contrib non-free<br>deb-src <a href="http://packages.deepin.com/deepin" target="_blank" rel="noopener">http://packages.deepin.com/deepin</a> panda main contrib non-free</p>
+</blockquote>
 
     </div>
 
@@ -260,8 +249,7 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" rel="tag"># 编程语言</a>
-              <a href="/tags/%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/" rel="tag"># 编程思想</a>
+              <a href="/tags/bug/" rel="tag"># bug</a>
           </div>
 
         
@@ -270,13 +258,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/Djang/20191204-index.html" rel="prev" title="Django框架 (一)">
-      <i class="fa fa-chevron-left"></i> Django框架 (一)
+    <a href="/%E5%B7%A5%E5%85%B7/20191216-null.html" rel="prev" title="appium">
+      <i class="fa fa-chevron-left"></i> appium
     </a></div>
-      <div class="post-nav-item">
-    <a href="/python/20191205-index.html" rel="next" title="python面向对象(二)">
-      python面向对象(二) <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -314,7 +299,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#类的描述"><span class="nav-number">1.</span> <span class="nav-text">类的描述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#面向对象都具有三大特性：封装，继承-和-多态"><span class="nav-number">2.</span> <span class="nav-text">面向对象都具有三大特性：封装，继承 和 多态</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#封装"><span class="nav-number">2.1.</span> <span class="nav-text">封装</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#继承"><span class="nav-number">2.2.</span> <span class="nav-text">继承</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#单继承"><span class="nav-number">2.2.1.</span> <span class="nav-text">单继承</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#多继承"><span class="nav-number">2.2.2.</span> <span class="nav-text">多继承</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#重载"><span class="nav-number">2.2.3.</span> <span class="nav-text">重载</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#多态"><span class="nav-number">2.3.</span> <span class="nav-text">多态</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#引言"><span class="nav-number">1.</span> <span class="nav-text">引言</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
