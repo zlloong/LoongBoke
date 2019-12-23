@@ -48,15 +48,15 @@
 
   <meta name="description" content="迭代器 生成器 lamblad">
 <meta property="og:type" content="article">
-<meta property="og:title" content="python用法">
-<meta property="og:url" content="http:&#x2F;&#x2F;ermao7.coding.me&#x2F;uncategorized&#x2F;20191219-null.html">
+<meta property="og:title" content="python关键字">
+<meta property="og:url" content="http:&#x2F;&#x2F;ermao7.coding.me&#x2F;uncategorized&#x2F;20191219-python%E5%85%B3%E9%94%AE%E5%AD%97.html">
 <meta property="og:site_name" content="张二毛的个人博客">
 <meta property="og:description" content="迭代器 生成器 lamblad">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-12-19T13:50:17.856Z">
+<meta property="og:updated_time" content="2019-12-20T06:27:40.233Z">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://ermao7.coding.me/uncategorized/20191219-null.html">
+<link rel="canonical" href="http://ermao7.coding.me/uncategorized/20191219-python%E5%85%B3%E9%94%AE%E5%AD%97.html">
 
 
 <script id="page-configurations">
@@ -70,7 +70,7 @@
   };
 </script>
 
-  <title>python用法 | 张二毛的个人博客</title>
+  <title>python关键字 | 张二毛的个人博客</title>
   
 
 
@@ -184,7 +184,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="en">
-    <link itemprop="mainEntityOfPage" href="http://ermao7.coding.me/uncategorized/20191219-null.html">
+    <link itemprop="mainEntityOfPage" href="http://ermao7.coding.me/uncategorized/20191219-python%E5%85%B3%E9%94%AE%E5%AD%97.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/zifeng.jpg">
@@ -197,7 +197,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          python用法
+          python关键字
         </h1>
 
         <div class="post-meta">
@@ -206,10 +206,16 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2019-12-19 21:49:13 / Modified: 21:50:17" itemprop="dateCreated datePublished" datetime="2019-12-19T21:49:13+08:00">2019-12-19</time>
+              <time title="Created: 2019-12-19 21:49:13" itemprop="dateCreated datePublished" datetime="2019-12-19T21:49:13+08:00">2019-12-19</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2019-12-20 14:27:40" itemprop="dateModified" datetime="2019-12-20T14:27:40+08:00">2019-12-20</time>
+              </span>
 
           
 
@@ -224,7 +230,15 @@
       
         <p>迭代器 生成器 lamblad</p>
 <a id="more"></a>
-<h1 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h1>
+<h3 id="容器-container"><a href="#容器-container" class="headerlink" title="容器(container)"></a>容器(container)</h3><p>可迭代对象(iterable)<br>可以通过for…in…这类语句迭代读取⼀条数据供我们使用的对象称之可迭代对象</p>
+<p>迭代器(iterator)<br>可以记住遍历的位置的对象。只能前进，不能后退</p>
+<p>生成器<br>生成器调用 next() 时，它会从上次离开位置恢复执行（它会记住上次执行语句时的所有数据值）。 显示如何非常容易地创建生成器的示例如下:</p>
+<p>lambda 参数,参数…：函数功能代码<br>如：lambda x,y:x + y    获取2个值的和的lambda函数</p>
+<p>global关键字</p>
+<h3 id="列表推到是"><a href="#列表推到是" class="headerlink" title="列表推到是"></a>列表推到是</h3><blockquote>
+<p>格式：[变量1+变量2 for 变量1 in 列表1 for 变量2 in 列表2 if 条件表达式]<br>变量 = {i+x:j+y for i，j in 字典1.items for x，y in 字典2.items() if 条件表达式}字典推到</p>
+</blockquote>
+<h3 id="深浅复制"><a href="#深浅复制" class="headerlink" title="深浅复制"></a>深浅复制</h3>
     </div>
 
     
@@ -242,7 +256,10 @@
     <a href="/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/20191219-%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%903.html" rel="prev" title="数据分析3">
       <i class="fa fa-chevron-left"></i> 数据分析3
     </a></div>
-      <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/%E5%B7%A5%E5%85%B7/20191220-docker.html" rel="next" title="docker容器使用">
+      docker容器使用 <i class="fa fa-chevron-right"></i>
+    </a></div>
     </div>
       </footer>
     
@@ -280,7 +297,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#后记"><span class="nav-number">1.</span> <span class="nav-text">后记</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#容器-container"><span class="nav-number">1.</span> <span class="nav-text">容器(container)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#列表推到是"><span class="nav-number">2.</span> <span class="nav-text">列表推到是</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#深浅复制"><span class="nav-number">3.</span> <span class="nav-text">深浅复制</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -295,7 +312,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives">
-          <span class="site-state-item-count">32</span>
+          <span class="site-state-item-count">35</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
