@@ -1,3 +1,3 @@
-// build time:Wed Dec 25 2019 19:38:21 GMT+0800 (CST)
+// build time:Fri Jan 03 2020 15:55:11 GMT+0800 (CST)
 window._bd_share_main.F.module("share/slide_api",function(e,i,t){var n=(e("base/tangram").T,e("base/class").Class),a=e("share/api_base");i.Api=n.create(function(e){var i=this;i._init=function(){var e=i.getView();e.render(),e.init()},i._slidePop=function(i,t){i._popupBox=t.boxEle,i._getPosition=function(){return{top:0,left:"left"==e.bdPos?0:t.element.width()}},i.show(t,e)},i._processAction=function(e){return{data:{type:"share"}}},i._distory=function(){}},a.ApiBase)});
 //rebuild by neat 
