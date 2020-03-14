@@ -1,1 +1,493 @@
-<!-- build time:Sat Mar 14 2020 16:24:33 GMT+0800 (CST) --><!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2"><meta name="theme-color" content="#222"><meta name="generator" content="Hexo 4.0.0"><link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png"><link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png"><link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png"><link rel="mask-icon" href="/images/logo.svg" color="#222"><meta name="baidu-site-verification" content="pVFrbEzuX2"><link rel="stylesheet" href="/css/main.css"><link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css"><script id="hexo-configurations">var NexT=window.NexT||{},CONFIG={hostname:new URL("http://ermao7.coding.me").hostname,root:"/",scheme:"Mist",version:"7.6.0",exturl:!1,sidebar:{position:"right",display:"post",padding:18,offset:12,onmobile:!1},copycode:{enable:!1,show_result:!1,style:null},back2top:{enable:!0,sidebar:!1,scrollpercent:!1},bookmark:{enable:!1,color:"#222",save:"auto"},fancybox:!1,mediumzoom:!1,lazyload:!1,pangu:!1,algolia:{appID:"",apiKey:"",indexName:"",hits:{per_page:10},labels:{input_placeholder:"Search for Posts",hits_empty:"We didn't find any results for the search: ${query}",hits_stats:"${hits} results found in ${time} ms"}},localsearch:{enable:!1,trigger:"auto",top_n_per_article:1,unescape:!1,preload:!1},path:"search.xml",motion:{enable:!0,async:!1,transition:{post_block:"fadeIn",post_header:"slideDownIn",post_body:"slideDownIn",coll_header:"slideLeftIn",sidebar:"slideUpIn"}}}</script><meta name="description" content="Flask框架包含两个核心:Werkzeug工具箱,Jinja2模板引擎由于Flask没有提供额外的其他功能,所以几乎所有的功能都要用到扩展实现,如下列表所示:利用Flask搭建简单的门户网站"><meta name="keywords" content="python"><meta property="og:type" content="article"><meta property="og:title" content="Flask"><meta property="og:url" content="http:&#x2F;&#x2F;ermao7.coding.me&#x2F;%E6%A1%86%E6%9E%B6&#x2F;20200105-Flask.html"><meta property="og:site_name" content="张二毛的个人博客"><meta property="og:description" content="Flask框架包含两个核心:Werkzeug工具箱,Jinja2模板引擎由于Flask没有提供额外的其他功能,所以几乎所有的功能都要用到扩展实现,如下列表所示:利用Flask搭建简单的门户网站"><meta property="og:locale" content="en"><meta property="og:updated_time" content="2020-01-05T14:12:48.877Z"><meta name="twitter:card" content="summary"><link rel="canonical" href="http://ermao7.coding.me/%E6%A1%86%E6%9E%B6/20200105-Flask.html"><script id="page-configurations">CONFIG.page={sidebar:"",isHome:!1,isPost:!0,isPage:!1,isArchive:!1}</script><title>Flask | 张二毛的个人博客</title><noscript><style>.sidebar-inner,.use-motion .brand,.use-motion .collection-header,.use-motion .comments,.use-motion .menu-item,.use-motion .pagination,.use-motion .post-block,.use-motion .post-body,.use-motion .post-header{opacity:initial}.use-motion .site-subtitle,.use-motion .site-title{opacity:initial;top:initial}.use-motion .logo-line-before i{left:initial}.use-motion .logo-line-after i{right:initial}</style></noscript></head><body itemscope itemtype="http://schema.org/WebPage"><div class="container use-motion"><div class="headband"></div><header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="header-inner"><div class="site-brand-container"><div class="site-meta"><div><a href="/" class="brand" rel="start"><span class="logo-line-before"><i></i></span> <span class="site-title">张二毛的个人博客</span> <span class="logo-line-after"><i></i></span></a></div></div><div class="site-nav-toggle"><div class="toggle" aria-label="Toggle navigation bar"><span class="toggle-line toggle-line-first"></span> <span class="toggle-line toggle-line-middle"></span> <span class="toggle-line toggle-line-last"></span></div></div></div><nav class="site-nav"><ul id="menu" class="menu"><li class="menu-item menu-item-主页"><a href="/" rel="section"><i class="fa fa-fw fa-home"></i>主页</a></li><li class="menu-item menu-item-关于"><a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>关于</a></li><li class="menu-item menu-item-标签"><a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a></li><li class="menu-item menu-item-分类"><a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类</a></li><li class="menu-item menu-item-归档"><a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a></li></ul></nav></div></header><div class="back-to-top"><i class="fa fa-arrow-up"></i> <span>0%</span></div><main class="main"><div class="main-inner"><div class="content-wrap"><div class="content"><div class="posts-expand"><article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en"><link itemprop="mainEntityOfPage" href="http://ermao7.coding.me/%E6%A1%86%E6%9E%B6/20200105-Flask.html"><span hidden itemprop="author" itemscope itemtype="http://schema.org/Person"><meta itemprop="image" content="/images/zifeng.jpg"><meta itemprop="name" content="张二毛"><meta itemprop="description" content=""></span><span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><meta itemprop="name" content="张二毛的个人博客"></span><header class="post-header"><h1 class="post-title" itemprop="name headline">Flask</h1><div class="post-meta"><span class="post-meta-item"><span class="post-meta-item-icon"><i class="fa fa-calendar-o"></i> </span><span class="post-meta-item-text">Posted on</span> <time title="Created: 2020-01-05 21:50:56 / Modified: 22:12:48" itemprop="dateCreated datePublished" datetime="2020-01-05T21:50:56+08:00">2020-01-05</time> </span><span class="post-meta-item"><span class="post-meta-item-icon"><i class="fa fa-folder-o"></i> </span><span class="post-meta-item-text">In</span> <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/%E6%A1%86%E6%9E%B6/" itemprop="url" rel="index"><span itemprop="name">框架</span></a></span></span><br><span class="post-meta-item" title="Symbols count in article"><span class="post-meta-item-icon"><i class="fa fa-file-word-o"></i> </span><span class="post-meta-item-text">Symbols count in article: </span><span>2.9k</span> </span><span class="post-meta-item" title="Reading time"><span class="post-meta-item-icon"><i class="fa fa-clock-o"></i> </span><span class="post-meta-item-text">Reading time &asymp;</span> <span>3 mins.</span></span></div></header><div class="post-body" itemprop="articleBody"><p>Flask框架包含两个核心:Werkzeug工具箱,Jinja2模板引擎<br>由于Flask没有提供额外的其他功能,所以几乎所有的功能都要用到扩展实现,如下列表所示:<br>利用Flask搭建简单的门户网站</p><a id="more"></a><h3 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h3><h4 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h4><p>from flask import Flask<br>创建Flask对象接收一个参数_<em>name__，它会指向程序所在的包<br>app = Flask(_<em>name</em></em>)<br>配置对象，里面定义需要给 APP 添加的一系列配置<br>class Config(object):<br>DEBUG = True</p><h5 id="路由"><a href="#路由" class="headerlink" title="路由"></a>路由</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">装饰器的作用是将路由映射到视图函数index</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">@app.route(&#39;&#x2F;&#39;)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">def index():</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">    return &#39;Hello World&#39;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">带有参数的int接收值  带有请求的get post</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">@app.route(&#39;&#x2F;user&#x2F;&lt;int:user_id&gt;&#39;, methods&#x3D;[&#39;GET&#39;, &#39;POST&#39;])</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">def user_info(user_id):</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">    return &#39;the num is %d&#39; % user_id</span></pre></td></tr></table></figure><h4 id="响应体"><a href="#响应体" class="headerlink" title="响应体"></a>响应体</h4><p>一.使用jsonify,生成json数据响应体<br>json_dict = {<br>“user_id”: 10,<br>“user_name”: “laowang”<br>}<br>二.使用redirect,url_for,生成文本响应体<br>格式: redirect(‘地址’);<br>重定向<br>@app.route(‘/demo5’) def demo5(): return redirect(url_for(‘demo1’))<br>三.返回字符串,自定义状态码,返回文本响应体</p><h4 id="转换器的本质-通过正则表达式-匹配路由地址"><a href="#转换器的本质-通过正则表达式-匹配路由地址" class="headerlink" title="转换器的本质:通过正则表达式,匹配路由地址"></a>转换器的本质:通过正则表达式,匹配路由地址</h4><p>自带转换器<br>DEFAULT_CONVERTERS = {<br>‘default’: UnicodeConverter,<br>‘string’: UnicodeConverter,<br>‘any’: AnyConverter,<br>‘path’: PathConverter,<br>‘int’: IntegerConverter,<br>‘float’: FloatConverter,<br>‘uuid’: UUIDConverter,<br>}</p><h3 id="模板"><a href="#模板" class="headerlink" title="模板"></a>模板</h3><p>在客户端存储信息使用Cookie<br>在服务器端存储信息使用Session</p><h4 id="Jinja2模板"><a href="#Jinja2模板" class="headerlink" title="Jinja2模板"></a>Jinja2模板</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">&lt;h1&gt;整数:&#123; &#123;number&#125; &#125;&lt;&#x2F;h1&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">  &lt;h1&gt;元祖:&#123; &#123;tuple[0]&#125; &#125;&lt;&#x2F;h1&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">  &lt;h1&gt;列表:&#123; &#123; list[0] &#125; &#125;&lt;&#x2F;h1&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">  &lt;h1&gt;字典:&#123; &#123; dict[&#39;key&#39;] &#125; &#125;&lt;&#x2F;h1&gt;</span></pre></td></tr></table></figure><p>后台导向 前端页面<br>return render_template(‘file01.html’,my_num=num,my_str=str,my_tuple=tuple,my_list=list,my_dict=dict)</p><p>其他同Django</p><h4 id="url-for"><a href="#url-for" class="headerlink" title="url_for"></a>url_for</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">url_for()</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">url_for会根据传入的路由器函数名,返回该路由对应的URL,在模板中始终使用url_for()就可以安全的修改路由绑定的URL,则不比担心模板中渲染出错的链接:</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">&#123;&#123;url_for(&#39;home&#39;)&#125;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">&#x2F;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">如果我们定义的路由URL是带有参数的,则可以把它们作为关键字参数传入url_for(),Flask会把他们填充进最终生成的URL中:</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">&#123;&#123; url_for(&#39;post&#39;, post_id&#x3D;1)&#125;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">&#x2F;post&#x2F;1</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">导向的时候 加上文件名.函数名 参数定义参数</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">&#123;&#123; url_for(&#39;delete_author&#39;,author_id&#x3D;author.id) &#125;&#125;&quot;</span></pre></td></tr></table></figure><h3 id="数据库"><a href="#数据库" class="headerlink" title="数据库"></a>数据库</h3><p>pip install flask-sqlalchemy<br>pip install flask-mysqldb</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"># 数据库链接地址</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">app.config[&#39;SQLALCHEMY_DATABASE_URI&#39;] &#x3D; &#39;mysql:&#x2F;&#x2F;root:mysql@127.0.0.1:3306&#x2F;test&#39;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"># 动态追踪修改设置，如未设置只会提示警告</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">app.config[&#39;SQLALCHEMY_TRACK_MODIFICATIONS&#39;] &#x3D; True</span></pre></td></tr></table></figure><h3 id="蓝图"><a href="#蓝图" class="headerlink" title="蓝图"></a>蓝图</h3><p>简单来说，Blueprint 是一个存储操作方法的容器，<br>这些操作在这个Blueprint 被注册到一个应用之后就可以被调用，<br>Flask 可以通过Blueprint来组织URL以及处理请求。<br>创建蓝图<br>admin=Blueprint(‘admin’,_<em>name_</em>)<br>蓝图的url前缀<br>当我们在应用对象上注册一个蓝图时，可以指定一个url_prefix关键字参数（这个参数默认是/）<br>在应用最终的路由表 url_map中，在蓝图上注册的路由URL自动被加上了这个前缀，这个可以保证在多个蓝图中使用相同的URL规则而不会最终引起冲突，只要在注册蓝图时将不同的蓝图挂接到不同的自路径即可</p><p>url_for</p><h3 id="常用扩展"><a href="#常用扩展" class="headerlink" title="常用扩展"></a>常用扩展</h3><ul><li>Flask-SQLalchemy：操作数据库；</li><li>Flask-script：插入脚本；</li><li>Flask-migrate：管理迁移数据库；</li><li>Flask-Session：Session存储方式指定；</li><li>Flask-WTF：表单；</li><li>Flask-Mail：邮件；</li><li>Flask-Bable：提供国际化和本地化支持，翻译；</li><li>Flask-Login：认证用户状态；</li><li>Flask-OpenID：认证；</li><li>Flask-RESTful：开发REST API的工具；</li><li>Flask-Bootstrap：集成前端Twitter Bootstrap框架；</li><li>Flask-Moment：本地化日期和时间；</li><li>Flask-Admin：简单而可扩展的管理接口的框架</li><li>更多扩展列表：<a href="http://flask.pocoo.org/extensions/" target="_blank" rel="noopener">http://flask.pocoo.org/extensions/</a></li><li>flask中文文档（<a href="http://docs.jinkan.org/docs/flask/）" target="_blank" rel="noopener">http://docs.jinkan.org/docs/flask/）</a><h3 id="request"><a href="#request" class="headerlink" title="request"></a>request</h3>属性 说明 类型<br>data 记录请求的数据，并转换为字符串 *<br>form 记录请求中的表单数据 MultiDict<br>args 记录请求中的查询参数 MultiDict<br>cookies 记录请求中的cookie信息 Dict<br>headers 记录请求中的报文头 EnvironHeaders<br>method 记录请求使用的HTTP方法 GET/POST<br>url 记录请求的URL地址 string<br>files 记录请求上传的文件 *</li></ul></div><footer class="post-footer"><div class="post-tags"><a href="/tags/python/" rel="tag"># python</a></div><div class="post-nav"><div class="post-nav-item"><a href="/HTML-CSS/20191224-HTML.html" rel="prev" title="HTML"><i class="fa fa-chevron-left"></i> HTML</a></div><div class="post-nav-item"></div></div></footer></article></div></div></div><div class="toggle sidebar-toggle"><span class="toggle-line toggle-line-first"></span> <span class="toggle-line toggle-line-middle"></span> <span class="toggle-line toggle-line-last"></span></div><aside class="sidebar"><div class="sidebar-inner"><ul class="sidebar-nav motion-element"><li class="sidebar-nav-toc">Table of Contents</li><li class="sidebar-nav-overview">Overview</li></ul><div class="post-toc-wrap sidebar-panel"><div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#使用"><span class="nav-number">1.</span> <span class="nav-text">使用</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#初始化"><span class="nav-number">1.1.</span> <span class="nav-text">初始化</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#路由"><span class="nav-number">1.1.1.</span> <span class="nav-text">路由</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#响应体"><span class="nav-number">1.2.</span> <span class="nav-text">响应体</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#转换器的本质-通过正则表达式-匹配路由地址"><span class="nav-number">1.3.</span> <span class="nav-text">转换器的本质:通过正则表达式,匹配路由地址</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#模板"><span class="nav-number">2.</span> <span class="nav-text">模板</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Jinja2模板"><span class="nav-number">2.1.</span> <span class="nav-text">Jinja2模板</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#url-for"><span class="nav-number">2.2.</span> <span class="nav-text">url_for</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数据库"><span class="nav-number">3.</span> <span class="nav-text">数据库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#蓝图"><span class="nav-number">4.</span> <span class="nav-text">蓝图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#常用扩展"><span class="nav-number">5.</span> <span class="nav-text">常用扩展</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#request"><span class="nav-number">6.</span> <span class="nav-text">request</span></a></li></ol></div></div><div class="site-overview-wrap sidebar-panel"><div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person"><img class="site-author-image" itemprop="image" alt="张二毛" src="/images/zifeng.jpg"><p class="site-author-name" itemprop="name">张二毛</p><div class="site-description" itemprop="description"></div></div><div class="site-state-wrap motion-element"><nav class="site-state"><div class="site-state-item site-state-posts"><a href="/archives"><span class="site-state-item-count">38</span> <span class="site-state-item-name">posts</span></a></div><div class="site-state-item site-state-categories"><a href="/categories/"><span class="site-state-item-count">11</span> <span class="site-state-item-name">categories</span></a></div><div class="site-state-item site-state-tags"><a href="/tags/"><span class="site-state-item-count">15</span> <span class="site-state-item-name">tags</span></a></div></nav></div><div class="links-of-author motion-element"><span class="links-of-author-item"><a href="https://github.com/yourname" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;yourname" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a> </span><span class="links-of-author-item"><a href="mailto:yourname@gmail.com" title="E-Mail → mailto:yourname@gmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a> </span><span class="links-of-author-item"><a href="https://weibo.com/u/5819819285?is_hot=1" title="Weibo → https:&#x2F;&#x2F;weibo.com&#x2F;u&#x2F;5819819285?is_hot&#x3D;1" rel="noopener" target="_blank"><i class="fa fa-fw fa-weibo"></i>Weibo</a></span></div><div class="links-of-blogroll motion-element"><div class="links-of-blogroll-title"><i class="fa fa-fw fa-link"></i> Links</div><ul class="links-of-blogroll-list"><li class="links-of-blogroll-item"><a href="http://www.zhihu.com/" title="http:&#x2F;&#x2F;www.zhihu.com" rel="noopener" target="_blank">知乎</a></li></ul></div></div></div></aside><div id="sidebar-dimmer"></div></div></main><footer class="footer"><div class="footer-inner"><div class="copyright">&copy; <span itemprop="copyrightYear">2020</span> <span class="with-love"><i class="fa fa-user"></i> </span><span class="author" itemprop="copyrightHolder">张二毛</span> <span class="post-meta-divider">|</span> <span class="post-meta-item-icon"><i class="fa fa-area-chart"></i> </span><span title="Symbols count total">48k</span> <span class="post-meta-divider">|</span> <span class="post-meta-item-icon"><i class="fa fa-coffee"></i> </span><span title="Reading time total">43 mins.</span></div><div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> v4.0.0</div><span class="post-meta-divider">|</span><div class="theme-info">Theme – <a href="https://mist.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> v7.6.0</div></div></footer></div><script color="0,0,255" opacity="0.5" zindex="-1" count="99" src="/lib/canvas-nest/canvas-nest.min.js"></script><script src="/lib/anime.min.js"></script><script src="/lib/velocity/velocity.min.js"></script><script src="/lib/velocity/velocity.ui.min.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script><script>!function(){var t=document.createElement("script"),e=window.location.protocol.split(":")[0];t.src="https"===e?"https://zz.bdstatic.com/linksubmit/push.js":"http://push.zhanzhang.baidu.com/push.js";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(t,s)}()</script></body></html><!-- rebuild by neat -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.0.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta name="baidu-site-verification" content="pVFrbEzuX2">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    hostname: new URL('http://ermao7.coding.me').hostname,
+    root: '/',
+    scheme: 'Mist',
+    version: '7.6.0',
+    exturl: false,
+    sidebar: {"position":"right","display":"post","padding":18,"offset":12,"onmobile":false},
+    copycode: {"enable":false,"show_result":false,"style":null},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: 'search.xml',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}
+  };
+</script>
+
+  <meta name="description" content="Flask框架包含两个核心:Werkzeug工具箱,Jinja2模板引擎由于Flask没有提供额外的其他功能,所以几乎所有的功能都要用到扩展实现,如下列表所示:利用Flask搭建简单的门户网站">
+<meta name="keywords" content="python">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Flask">
+<meta property="og:url" content="http:&#x2F;&#x2F;ermao7.coding.me&#x2F;%E6%A1%86%E6%9E%B6&#x2F;20200105-Flask.html">
+<meta property="og:site_name" content="张二毛的个人博客">
+<meta property="og:description" content="Flask框架包含两个核心:Werkzeug工具箱,Jinja2模板引擎由于Flask没有提供额外的其他功能,所以几乎所有的功能都要用到扩展实现,如下列表所示:利用Flask搭建简单的门户网站">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2020-01-05T14:12:48.877Z">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://ermao7.coding.me/%E6%A1%86%E6%9E%B6/20200105-Flask.html">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true,
+    isPage: false,
+    isArchive: false
+  };
+</script>
+
+  <title>Flask | 张二毛的个人博客</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">张二毛的个人博客</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+  </div>
+
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-主页">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>主页</a>
+
+  </li>
+        <li class="menu-item menu-item-关于">
+
+    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-标签">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-分类">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-归档">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
+
+  </li>
+  </ul>
+
+</nav>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="en">
+    <link itemprop="mainEntityOfPage" href="http://ermao7.coding.me/%E6%A1%86%E6%9E%B6/20200105-Flask.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/zifeng.jpg">
+      <meta itemprop="name" content="张二毛">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="张二毛的个人博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Flask
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2020-01-05 21:50:56 / Modified: 22:12:48" itemprop="dateCreated datePublished" datetime="2020-01-05T21:50:56+08:00">2020-01-05</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%A1%86%E6%9E%B6/" itemprop="url" rel="index">
+                    <span itemprop="name">框架</span>
+                  </a>
+                </span>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="Symbols count in article">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">Symbols count in article: </span>
+              <span>2.9k</span>
+            </span>
+            <span class="post-meta-item" title="Reading time">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">Reading time &asymp;</span>
+              <span>3 mins.</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>Flask框架包含两个核心:Werkzeug工具箱,Jinja2模板引擎<br>由于Flask没有提供额外的其他功能,所以几乎所有的功能都要用到扩展实现,如下列表所示:<br>利用Flask搭建简单的门户网站</p>
+<a id="more"></a>
+<h3 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h3><h4 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h4><p>from flask import Flask<br>创建Flask对象接收一个参数_<em>name__，它会指向程序所在的包<br>app = Flask(_<em>name</em></em>)<br>配置对象，里面定义需要给 APP 添加的一系列配置<br>class Config(object):<br>DEBUG = True</p>
+<h5 id="路由"><a href="#路由" class="headerlink" title="路由"></a>路由</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">装饰器的作用是将路由映射到视图函数index</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">@app.route(&#39;&#x2F;&#39;)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">def index():</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">    return &#39;Hello World&#39;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">带有参数的int接收值  带有请求的get post</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">@app.route(&#39;&#x2F;user&#x2F;&lt;int:user_id&gt;&#39;, methods&#x3D;[&#39;GET&#39;, &#39;POST&#39;])</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">def user_info(user_id):</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">    return &#39;the num is %d&#39; % user_id</span></pre></td></tr></table></figure>
+
+<h4 id="响应体"><a href="#响应体" class="headerlink" title="响应体"></a>响应体</h4><p>一.使用jsonify,生成json数据响应体<br>json_dict = {<br>        “user_id”: 10,<br>        “user_name”: “laowang”<br>  }<br>二.使用redirect,url_for,生成文本响应体<br>格式: redirect(‘地址’);<br>重定向<br>@app.route(‘/demo5’) def demo5(): return redirect(url_for(‘demo1’))<br>三.返回字符串,自定义状态码,返回文本响应体</p>
+<h4 id="转换器的本质-通过正则表达式-匹配路由地址"><a href="#转换器的本质-通过正则表达式-匹配路由地址" class="headerlink" title="转换器的本质:通过正则表达式,匹配路由地址"></a>转换器的本质:通过正则表达式,匹配路由地址</h4><p>自带转换器<br>DEFAULT_CONVERTERS = {<br>    ‘default’:          UnicodeConverter,<br>    ‘string’:           UnicodeConverter,<br>    ‘any’:              AnyConverter,<br>    ‘path’:             PathConverter,<br>    ‘int’:              IntegerConverter,<br>    ‘float’:            FloatConverter,<br>    ‘uuid’:             UUIDConverter,<br>}</p>
+<h3 id="模板"><a href="#模板" class="headerlink" title="模板"></a>模板</h3><p>在客户端存储信息使用Cookie<br>在服务器端存储信息使用Session</p>
+<h4 id="Jinja2模板"><a href="#Jinja2模板" class="headerlink" title="Jinja2模板"></a>Jinja2模板</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">&lt;h1&gt;整数:&#123; &#123;number&#125; &#125;&lt;&#x2F;h1&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">  &lt;h1&gt;元祖:&#123; &#123;tuple[0]&#125; &#125;&lt;&#x2F;h1&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">  &lt;h1&gt;列表:&#123; &#123; list[0] &#125; &#125;&lt;&#x2F;h1&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">  &lt;h1&gt;字典:&#123; &#123; dict[&#39;key&#39;] &#125; &#125;&lt;&#x2F;h1&gt;</span></pre></td></tr></table></figure>
+<p>后台导向 前端页面<br>return render_template(‘file01.html’,my_num=num,my_str=str,my_tuple=tuple,my_list=list,my_dict=dict)</p>
+<p>其他同Django</p>
+<h4 id="url-for"><a href="#url-for" class="headerlink" title="url_for"></a>url_for</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">url_for()</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">url_for会根据传入的路由器函数名,返回该路由对应的URL,在模板中始终使用url_for()就可以安全的修改路由绑定的URL,则不比担心模板中渲染出错的链接:</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">&#123;&#123;url_for(&#39;home&#39;)&#125;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">&#x2F;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">如果我们定义的路由URL是带有参数的,则可以把它们作为关键字参数传入url_for(),Flask会把他们填充进最终生成的URL中:</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">&#123;&#123; url_for(&#39;post&#39;, post_id&#x3D;1)&#125;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">&#x2F;post&#x2F;1</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">导向的时候 加上文件名.函数名 参数定义参数</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">&#123;&#123; url_for(&#39;delete_author&#39;,author_id&#x3D;author.id) &#125;&#125;&quot;</span></pre></td></tr></table></figure>
+<h3 id="数据库"><a href="#数据库" class="headerlink" title="数据库"></a>数据库</h3><p>pip install flask-sqlalchemy<br>pip install flask-mysqldb</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"># 数据库链接地址</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">app.config[&#39;SQLALCHEMY_DATABASE_URI&#39;] &#x3D; &#39;mysql:&#x2F;&#x2F;root:mysql@127.0.0.1:3306&#x2F;test&#39;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"># 动态追踪修改设置，如未设置只会提示警告</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">app.config[&#39;SQLALCHEMY_TRACK_MODIFICATIONS&#39;] &#x3D; True</span></pre></td></tr></table></figure>
+<h3 id="蓝图"><a href="#蓝图" class="headerlink" title="蓝图"></a>蓝图</h3><p>简单来说，Blueprint 是一个存储操作方法的容器，<br>这些操作在这个Blueprint 被注册到一个应用之后就可以被调用，<br>Flask 可以通过Blueprint来组织URL以及处理请求。<br>创建蓝图<br>admin=Blueprint(‘admin’,_<em>name_</em>)<br>蓝图的url前缀<br>当我们在应用对象上注册一个蓝图时，可以指定一个url_prefix关键字参数（这个参数默认是/）<br>在应用最终的路由表 url_map中，在蓝图上注册的路由URL自动被加上了这个前缀，这个可以保证在多个蓝图中使用相同的URL规则而不会最终引起冲突，只要在注册蓝图时将不同的蓝图挂接到不同的自路径即可</p>
+<p>url_for</p>
+<h3 id="常用扩展"><a href="#常用扩展" class="headerlink" title="常用扩展"></a>常用扩展</h3><ul>
+<li>Flask-SQLalchemy：操作数据库；</li>
+<li>Flask-script：插入脚本；</li>
+<li>Flask-migrate：管理迁移数据库；</li>
+<li>Flask-Session：Session存储方式指定；</li>
+<li>Flask-WTF：表单；</li>
+<li>Flask-Mail：邮件；</li>
+<li>Flask-Bable：提供国际化和本地化支持，翻译；</li>
+<li>Flask-Login：认证用户状态；</li>
+<li>Flask-OpenID：认证；</li>
+<li>Flask-RESTful：开发REST API的工具；</li>
+<li>Flask-Bootstrap：集成前端Twitter Bootstrap框架；</li>
+<li>Flask-Moment：本地化日期和时间；</li>
+<li>Flask-Admin：简单而可扩展的管理接口的框架</li>
+<li>更多扩展列表：<a href="http://flask.pocoo.org/extensions/" target="_blank" rel="noopener">http://flask.pocoo.org/extensions/</a></li>
+<li>flask中文文档（<a href="http://docs.jinkan.org/docs/flask/）" target="_blank" rel="noopener">http://docs.jinkan.org/docs/flask/）</a><h3 id="request"><a href="#request" class="headerlink" title="request"></a>request</h3>属性    说明    类型<br>data    记录请求的数据，并转换为字符串    *<br>form    记录请求中的表单数据    MultiDict<br>args    记录请求中的查询参数    MultiDict<br>cookies    记录请求中的cookie信息    Dict<br>headers    记录请求中的报文头    EnvironHeaders<br>method    记录请求使用的HTTP方法    GET/POST<br>url    记录请求的URL地址    string<br>files    记录请求上传的文件    *</li>
+</ul>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/python/" rel="tag"># python</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/HTML-CSS/20191224-HTML.html" rel="prev" title="HTML">
+      <i class="fa fa-chevron-left"></i> HTML
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+  </div>
+
+
+          </div>
+          
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#使用"><span class="nav-number">1.</span> <span class="nav-text">使用</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#初始化"><span class="nav-number">1.1.</span> <span class="nav-text">初始化</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#路由"><span class="nav-number">1.1.1.</span> <span class="nav-text">路由</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#响应体"><span class="nav-number">1.2.</span> <span class="nav-text">响应体</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#转换器的本质-通过正则表达式-匹配路由地址"><span class="nav-number">1.3.</span> <span class="nav-text">转换器的本质:通过正则表达式,匹配路由地址</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#模板"><span class="nav-number">2.</span> <span class="nav-text">模板</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Jinja2模板"><span class="nav-number">2.1.</span> <span class="nav-text">Jinja2模板</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#url-for"><span class="nav-number">2.2.</span> <span class="nav-text">url_for</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数据库"><span class="nav-number">3.</span> <span class="nav-text">数据库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#蓝图"><span class="nav-number">4.</span> <span class="nav-text">蓝图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#常用扩展"><span class="nav-number">5.</span> <span class="nav-text">常用扩展</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#request"><span class="nav-number">6.</span> <span class="nav-text">request</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="张二毛"
+      src="/images/zifeng.jpg">
+  <p class="site-author-name" itemprop="name">张二毛</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives">
+          <span class="site-state-item-count">38</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+        <span class="site-state-item-count">11</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+        <span class="site-state-item-count">15</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/yourname" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;yourname" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:yourname@gmail.com" title="E-Mail → mailto:yourname@gmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://weibo.com/u/5819819285?is_hot=1" title="Weibo → https:&#x2F;&#x2F;weibo.com&#x2F;u&#x2F;5819819285?is_hot&#x3D;1" rel="noopener" target="_blank"><i class="fa fa-fw fa-weibo"></i>Weibo</a>
+      </span>
+  </div>
+
+
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title">
+      <i class="fa fa-fw fa-link"></i>
+      Links
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="http://www.zhihu.com/" title="http:&#x2F;&#x2F;www.zhihu.com" rel="noopener" target="_blank">知乎</a>
+        </li>
+    </ul>
+  </div>
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">张二毛</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    <span title="Symbols count total">48k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="Reading time total">43 mins.</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> v4.0.0
+  </div>
+  <span class="post-meta-divider">|</span>
+  <div class="theme-info">Theme – <a href="https://mist.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> v7.6.0
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  
+  <script color='0,0,255' opacity='0.5' zIndex='-1' count='99' src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script>
+<script src="/js/schemes/muse.js"></script>
+<script src="/js/next-boot.js"></script>
+
+
+
+  
+  <script>
+    (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      bp.src = (curProtocol === 'https') ? 'https://zz.bdstatic.com/linksubmit/push.js' : 'http://push.zhanzhang.baidu.com/push.js';
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>

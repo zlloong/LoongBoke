@@ -1,1 +1,483 @@
-<!-- build time:Sat Mar 14 2020 16:24:33 GMT+0800 (CST) --><!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2"><meta name="theme-color" content="#222"><meta name="generator" content="Hexo 4.0.0"><link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png"><link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png"><link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png"><link rel="mask-icon" href="/images/logo.svg" color="#222"><meta name="baidu-site-verification" content="pVFrbEzuX2"><link rel="stylesheet" href="/css/main.css"><link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css"><script id="hexo-configurations">var NexT=window.NexT||{},CONFIG={hostname:new URL("http://ermao7.coding.me").hostname,root:"/",scheme:"Mist",version:"7.6.0",exturl:!1,sidebar:{position:"right",display:"post",padding:18,offset:12,onmobile:!1},copycode:{enable:!1,show_result:!1,style:null},back2top:{enable:!0,sidebar:!1,scrollpercent:!1},bookmark:{enable:!1,color:"#222",save:"auto"},fancybox:!1,mediumzoom:!1,lazyload:!1,pangu:!1,algolia:{appID:"",apiKey:"",indexName:"",hits:{per_page:10},labels:{input_placeholder:"Search for Posts",hits_empty:"We didn't find any results for the search: ${query}",hits_stats:"${hits} results found in ${time} ms"}},localsearch:{enable:!1,trigger:"auto",top_n_per_article:1,unescape:!1,preload:!1},path:"search.xml",motion:{enable:!0,async:!1,transition:{post_block:"fadeIn",post_header:"slideDownIn",post_body:"slideDownIn",coll_header:"slideLeftIn",sidebar:"slideUpIn"}}}</script><meta name="description" content="python 所用的作图包from pyecharts import Barimport pyechartsfrom pyecharts import Bar3D#3D 构图特点:柱状图比较,折线图趋势,饼状图比例,散点图 做二维数组的比较雷达图做思维以上的数据对比"><meta name="keywords" content="python"><meta property="og:type" content="article"><meta property="og:title" content="数据可视化"><meta property="og:url" content="http:&#x2F;&#x2F;ermao7.coding.me&#x2F;%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90&#x2F;20191223-%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96.html"><meta property="og:site_name" content="张二毛的个人博客"><meta property="og:description" content="python 所用的作图包from pyecharts import Barimport pyechartsfrom pyecharts import Bar3D#3D 构图特点:柱状图比较,折线图趋势,饼状图比例,散点图 做二维数组的比较雷达图做思维以上的数据对比"><meta property="og:locale" content="en"><meta property="og:updated_time" content="2019-12-23T13:58:21.407Z"><meta name="twitter:card" content="summary"><link rel="canonical" href="http://ermao7.coding.me/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/20191223-%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96.html"><script id="page-configurations">CONFIG.page={sidebar:"",isHome:!1,isPost:!0,isPage:!1,isArchive:!1}</script><title>数据可视化 | 张二毛的个人博客</title><noscript><style>.sidebar-inner,.use-motion .brand,.use-motion .collection-header,.use-motion .comments,.use-motion .menu-item,.use-motion .pagination,.use-motion .post-block,.use-motion .post-body,.use-motion .post-header{opacity:initial}.use-motion .site-subtitle,.use-motion .site-title{opacity:initial;top:initial}.use-motion .logo-line-before i{left:initial}.use-motion .logo-line-after i{right:initial}</style></noscript></head><body itemscope itemtype="http://schema.org/WebPage"><div class="container use-motion"><div class="headband"></div><header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="header-inner"><div class="site-brand-container"><div class="site-meta"><div><a href="/" class="brand" rel="start"><span class="logo-line-before"><i></i></span> <span class="site-title">张二毛的个人博客</span> <span class="logo-line-after"><i></i></span></a></div></div><div class="site-nav-toggle"><div class="toggle" aria-label="Toggle navigation bar"><span class="toggle-line toggle-line-first"></span> <span class="toggle-line toggle-line-middle"></span> <span class="toggle-line toggle-line-last"></span></div></div></div><nav class="site-nav"><ul id="menu" class="menu"><li class="menu-item menu-item-主页"><a href="/" rel="section"><i class="fa fa-fw fa-home"></i>主页</a></li><li class="menu-item menu-item-关于"><a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>关于</a></li><li class="menu-item menu-item-标签"><a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a></li><li class="menu-item menu-item-分类"><a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类</a></li><li class="menu-item menu-item-归档"><a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a></li></ul></nav></div></header><div class="back-to-top"><i class="fa fa-arrow-up"></i> <span>0%</span></div><main class="main"><div class="main-inner"><div class="content-wrap"><div class="content"><div class="posts-expand"><article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en"><link itemprop="mainEntityOfPage" href="http://ermao7.coding.me/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/20191223-%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96.html"><span hidden itemprop="author" itemscope itemtype="http://schema.org/Person"><meta itemprop="image" content="/images/zifeng.jpg"><meta itemprop="name" content="张二毛"><meta itemprop="description" content=""></span><span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><meta itemprop="name" content="张二毛的个人博客"></span><header class="post-header"><h1 class="post-title" itemprop="name headline">数据可视化</h1><div class="post-meta"><span class="post-meta-item"><span class="post-meta-item-icon"><i class="fa fa-calendar-o"></i> </span><span class="post-meta-item-text">Posted on</span> <time title="Created: 2019-12-23 21:26:16 / Modified: 21:58:21" itemprop="dateCreated datePublished" datetime="2019-12-23T21:26:16+08:00">2019-12-23</time> </span><span class="post-meta-item"><span class="post-meta-item-icon"><i class="fa fa-folder-o"></i> </span><span class="post-meta-item-text">In</span> <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/" itemprop="url" rel="index"><span itemprop="name">数据分析</span></a></span></span><br><span class="post-meta-item" title="Symbols count in article"><span class="post-meta-item-icon"><i class="fa fa-file-word-o"></i> </span><span class="post-meta-item-text">Symbols count in article: </span><span>3.1k</span> </span><span class="post-meta-item" title="Reading time"><span class="post-meta-item-icon"><i class="fa fa-clock-o"></i> </span><span class="post-meta-item-text">Reading time &asymp;</span> <span>3 mins.</span></span></div></header><div class="post-body" itemprop="articleBody"><p>python 所用的作图包<br>from pyecharts import Bar<br>import pyecharts<br>from pyecharts import Bar3D#3D 构图<br>特点:<br>柱状图比较,折线图趋势,饼状图比例,散点图 做二维数组的比较<br>雷达图做思维以上的数据对比</p><a id="more"></a><h3 id="柱形图"><a href="#柱形图" class="headerlink" title="柱形图"></a>柱形图</h3><blockquote><p>attr=[“奥迪”,”宝马”,”大众”]#定义值<br>v1 = [10000,2332,2332]#参数<br>bar=Bar(“汽车品牌销售”)#标题<br>bar.add(“韩城”,attr,v2,is_stack=True) 可以叠加添加条柱形图,参数mkar_point=[“average”]平均值,,mkrk_point=[“min”,”max”])#俩个块之间的距离<br>可用函数 sum等</p></blockquote><h3 id="3d画图"><a href="#3d画图" class="headerlink" title="3d画图"></a>3d画图</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">bar3d &#x3D; Bar3D(&quot;3D 柱状图示例&quot;, width&#x3D;1200, height&#x3D;600)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">添加坐标</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">x_axis &#x3D; [</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">    &quot;12a&quot;, &quot;1a&quot;, &quot;2a&quot;, &quot;3a&quot;, &quot;4a&quot;, &quot;5a&quot;, &quot;6a&quot;, &quot;7a&quot;, &quot;8a&quot;, &quot;9a&quot;, &quot;10a&quot;, &quot;11a&quot;,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">    &quot;12p&quot;, &quot;1p&quot;, &quot;2p&quot;, &quot;3p&quot;, &quot;4p&quot;, &quot;5p&quot;, &quot;6p&quot;, &quot;7p&quot;, &quot;8p&quot;, &quot;9p&quot;, &quot;10p&quot;, &quot;11p&quot;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">    ]</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">坐标</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">y_axis &#x3D; [</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">    &quot;Saturday&quot;, &quot;Friday&quot;, &quot;Thursday&quot;, &quot;Wednesday&quot;, &quot;Tuesday&quot;, &quot;Monday&quot;, &quot;Sunday&quot;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">    ]</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">数据</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">data &#x3D; [</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line">    [0, 0, 5], [0, 1, 1], [0, 2, 0], [0, 3, 0], [0, 4, 0], [0, 5, 0],</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line">    [0, 6, 0], [0, 7, 0], [0, 8, 0], [0, 9, 0], [0, 10, 0], [0, 11, 2],</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">15</span></pre></td><td class="code"><pre><span class="line">]</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">16</span></pre></td><td class="code"><pre><span class="line">添加构图的颜色</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">17</span></pre></td><td class="code"><pre><span class="line">range_color &#x3D; [&#39;#313695&#39;, &#39;#4575b4&#39;, &#39;#74add1&#39;, &#39;#abd9e9&#39;, &#39;#e0f3f8&#39;, &#39;#ffffbf&#39;,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">18</span></pre></td><td class="code"><pre><span class="line">               &#39;#fee090&#39;, &#39;#fdae61&#39;, &#39;#f46d43&#39;, &#39;#d73027&#39;, &#39;#a50026&#39;]</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">19</span></pre></td><td class="code"><pre><span class="line">bar3d.add(</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">20</span></pre></td><td class="code"><pre><span class="line">    &quot;&quot;,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">21</span></pre></td><td class="code"><pre><span class="line">    x_axis,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">22</span></pre></td><td class="code"><pre><span class="line">    y_axis,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">23</span></pre></td><td class="code"><pre><span class="line">    [[d[1], d[0], d[2]] for d in data],#遍历数据中的元素然后传递给d</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">24</span></pre></td><td class="code"><pre><span class="line">    is_visualmap&#x3D;True,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">25</span></pre></td><td class="code"><pre><span class="line">    visual_range&#x3D;[0, 20],</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">26</span></pre></td><td class="code"><pre><span class="line">    visual_range_color&#x3D;range_color,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">27</span></pre></td><td class="code"><pre><span class="line">    grid3d_width&#x3D;200,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">28</span></pre></td><td class="code"><pre><span class="line">    grid3d_depth&#x3D;80,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">29</span></pre></td><td class="code"><pre><span class="line">)</span></pre></td></tr></table></figure><h3 id="动态散点图"><a href="#动态散点图" class="headerlink" title="动态散点图"></a>动态散点图</h3><p>可用生成动态网页来观看<br>参数可用列表<br>es=pyecharts.EffectScatter(“动态散点图”)<br>es.add(“销售额度”,v1,v2)<br>es.render()#下载成一个网页图片</p><h3 id="漏斗图"><a href="#漏斗图" class="headerlink" title="漏斗图"></a>漏斗图</h3><blockquote><p>fu=pyecharts.Funnel(“漏斗图”)<br>attr=[“袜子”,”羊毛衫”,”牛仔裤”,”高跟鞋”,”b背包”]<br>fu.add(“商品价格”,attr,v2,is_label_show=True,funnel_sort=”ascending”)#是否显示标签 funnel_sort 翻转排序</p></blockquote><h3 id="仪表盘"><a href="#仪表盘" class="headerlink" title="仪表盘"></a>仪表盘</h3><p>gauge=pyecharts.Gauge(“仪表盘”)<br>gauge.add(“业务指标”,”完成率”,random.randint(4,100))#仪表盘</p><h3 id="饼图"><a href="#饼图" class="headerlink" title="饼图"></a>饼图</h3><p>#饼图<br>attr=[“袜子”,”羊毛衫”,”牛仔裤”]<br>v1=[10,20,70]<br>pie=pyecharts.Pie(“饼图”)<br>pie.add(“占额”,attr,v1,radiu=[20,75],rosetype=”area”)#rosetype 风格</p><h3 id="雷达图"><a href="#雷达图" class="headerlink" title="雷达图"></a>雷达图</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">radar&#x3D;pyecharts.Radar()</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">schema &#x3D; [ </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">    (&quot;销售&quot;, 6500), (&quot;管理&quot;, 16000), (&quot;信息技术&quot;, 30000),</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">    (&quot;客服&quot;, 38000), (&quot;研发&quot;, 52000), (&quot;市场&quot;, 25000)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">]</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">v1 &#x3D; [[4300, 10000, 28000, 35000, 50000, 19000]]</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">v2 &#x3D; [[5000, 14000, 28000, 31000, 42000, 21000]]</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">radar.config(schema)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">radar.add(&quot;预算&quot;,v1,)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">radar.add(&quot;预算&quot;,v2,)</span></pre></td></tr></table></figure><h3 id="关系图"><a href="#关系图" class="headerlink" title="关系图"></a>关系图</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">nodes&#x3D;[</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">    &#123;&quot;name&quot;:&quot;马云&quot;,&quot;money&quot;:&quot;200000&quot;,&quot;symbolSize&quot;:40&#125;,]</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">link&#x3D;[]</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">for i in nodes:</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">    for j in nodes:</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">        link.append(&#123;&quot;source&quot;:i.get(&quot;name&quot;),&quot;target&quot;:j.get(&quot;name&quot;)&#125;)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">graph&#x3D;pyecharts.Graph(&quot;关系图&quot;)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">graph.add(&quot;&quot;,nodes,link,repulsion&#x3D;600)</span></pre></td></tr></table></figure><h3 id="重点图-字体大小"><a href="#重点图-字体大小" class="headerlink" title="重点图 字体大小"></a>重点图 字体大小</h3><blockquote><p>name=[“垃圾”,”清洁干净”,”妈妈喜欢”,”赞”,”真好”,”泡沫多”]<br>alue=[100,20,10,33,6,30]#数据对应上面一个<br>word=pyecharts.WordCloud(width=1200,height=600)<br>word.add(“”,name,value,word_size_range=[20,90])</p></blockquote><h3 id="利用json数据转化饼图"><a href="#利用json数据转化饼图" class="headerlink" title="利用json数据转化饼图"></a>利用json数据转化饼图</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">f&#x3D;open(&quot;pies.json&quot;)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">data&#x3D;json.load(f)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">name &#x3D;data[&#39;name&#39;]</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">value&#x3D;data[&quot;sales&quot;]</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">pie&#x3D;pyecharts.Pie(&quot;&quot;)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">pie.add(&quot;&quot;,name,value)</span></pre></td></tr></table></figure></div><footer class="post-footer"><div class="post-tags"><a href="/tags/python/" rel="tag"># python</a></div><div class="post-nav"><div class="post-nav-item"><a href="/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/20191223-%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%904.html" rel="prev" title="数据分析4"><i class="fa fa-chevron-left"></i> 数据分析4</a></div><div class="post-nav-item"><a href="/HTML-CSS/20191224-HTML.html" rel="next" title="HTML">HTML <i class="fa fa-chevron-right"></i></a></div></div></footer></article></div></div></div><div class="toggle sidebar-toggle"><span class="toggle-line toggle-line-first"></span> <span class="toggle-line toggle-line-middle"></span> <span class="toggle-line toggle-line-last"></span></div><aside class="sidebar"><div class="sidebar-inner"><ul class="sidebar-nav motion-element"><li class="sidebar-nav-toc">Table of Contents</li><li class="sidebar-nav-overview">Overview</li></ul><div class="post-toc-wrap sidebar-panel"><div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#柱形图"><span class="nav-number">1.</span> <span class="nav-text">柱形图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3d画图"><span class="nav-number">2.</span> <span class="nav-text">3d画图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#动态散点图"><span class="nav-number">3.</span> <span class="nav-text">动态散点图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#漏斗图"><span class="nav-number">4.</span> <span class="nav-text">漏斗图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#仪表盘"><span class="nav-number">5.</span> <span class="nav-text">仪表盘</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#饼图"><span class="nav-number">6.</span> <span class="nav-text">饼图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#雷达图"><span class="nav-number">7.</span> <span class="nav-text">雷达图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#关系图"><span class="nav-number">8.</span> <span class="nav-text">关系图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#重点图-字体大小"><span class="nav-number">9.</span> <span class="nav-text">重点图 字体大小</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#利用json数据转化饼图"><span class="nav-number">10.</span> <span class="nav-text">利用json数据转化饼图</span></a></li></ol></div></div><div class="site-overview-wrap sidebar-panel"><div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person"><img class="site-author-image" itemprop="image" alt="张二毛" src="/images/zifeng.jpg"><p class="site-author-name" itemprop="name">张二毛</p><div class="site-description" itemprop="description"></div></div><div class="site-state-wrap motion-element"><nav class="site-state"><div class="site-state-item site-state-posts"><a href="/archives"><span class="site-state-item-count">38</span> <span class="site-state-item-name">posts</span></a></div><div class="site-state-item site-state-categories"><a href="/categories/"><span class="site-state-item-count">11</span> <span class="site-state-item-name">categories</span></a></div><div class="site-state-item site-state-tags"><a href="/tags/"><span class="site-state-item-count">15</span> <span class="site-state-item-name">tags</span></a></div></nav></div><div class="links-of-author motion-element"><span class="links-of-author-item"><a href="https://github.com/yourname" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;yourname" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a> </span><span class="links-of-author-item"><a href="mailto:yourname@gmail.com" title="E-Mail → mailto:yourname@gmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a> </span><span class="links-of-author-item"><a href="https://weibo.com/u/5819819285?is_hot=1" title="Weibo → https:&#x2F;&#x2F;weibo.com&#x2F;u&#x2F;5819819285?is_hot&#x3D;1" rel="noopener" target="_blank"><i class="fa fa-fw fa-weibo"></i>Weibo</a></span></div><div class="links-of-blogroll motion-element"><div class="links-of-blogroll-title"><i class="fa fa-fw fa-link"></i> Links</div><ul class="links-of-blogroll-list"><li class="links-of-blogroll-item"><a href="http://www.zhihu.com/" title="http:&#x2F;&#x2F;www.zhihu.com" rel="noopener" target="_blank">知乎</a></li></ul></div></div></div></aside><div id="sidebar-dimmer"></div></div></main><footer class="footer"><div class="footer-inner"><div class="copyright">&copy; <span itemprop="copyrightYear">2020</span> <span class="with-love"><i class="fa fa-user"></i> </span><span class="author" itemprop="copyrightHolder">张二毛</span> <span class="post-meta-divider">|</span> <span class="post-meta-item-icon"><i class="fa fa-area-chart"></i> </span><span title="Symbols count total">48k</span> <span class="post-meta-divider">|</span> <span class="post-meta-item-icon"><i class="fa fa-coffee"></i> </span><span title="Reading time total">43 mins.</span></div><div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> v4.0.0</div><span class="post-meta-divider">|</span><div class="theme-info">Theme – <a href="https://mist.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> v7.6.0</div></div></footer></div><script color="0,0,255" opacity="0.5" zindex="-1" count="99" src="/lib/canvas-nest/canvas-nest.min.js"></script><script src="/lib/anime.min.js"></script><script src="/lib/velocity/velocity.min.js"></script><script src="/lib/velocity/velocity.ui.min.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script><script>!function(){var t=document.createElement("script"),e=window.location.protocol.split(":")[0];t.src="https"===e?"https://zz.bdstatic.com/linksubmit/push.js":"http://push.zhanzhang.baidu.com/push.js";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(t,s)}()</script></body></html><!-- rebuild by neat -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.0.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta name="baidu-site-verification" content="pVFrbEzuX2">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    hostname: new URL('http://ermao7.coding.me').hostname,
+    root: '/',
+    scheme: 'Mist',
+    version: '7.6.0',
+    exturl: false,
+    sidebar: {"position":"right","display":"post","padding":18,"offset":12,"onmobile":false},
+    copycode: {"enable":false,"show_result":false,"style":null},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: 'search.xml',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}
+  };
+</script>
+
+  <meta name="description" content="python 所用的作图包from pyecharts import Barimport pyechartsfrom pyecharts import Bar3D#3D 构图特点:柱状图比较,折线图趋势,饼状图比例,散点图 做二维数组的比较雷达图做思维以上的数据对比">
+<meta name="keywords" content="python">
+<meta property="og:type" content="article">
+<meta property="og:title" content="数据可视化">
+<meta property="og:url" content="http:&#x2F;&#x2F;ermao7.coding.me&#x2F;%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90&#x2F;20191223-%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96.html">
+<meta property="og:site_name" content="张二毛的个人博客">
+<meta property="og:description" content="python 所用的作图包from pyecharts import Barimport pyechartsfrom pyecharts import Bar3D#3D 构图特点:柱状图比较,折线图趋势,饼状图比例,散点图 做二维数组的比较雷达图做思维以上的数据对比">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-12-23T13:58:21.407Z">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://ermao7.coding.me/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/20191223-%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96.html">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true,
+    isPage: false,
+    isArchive: false
+  };
+</script>
+
+  <title>数据可视化 | 张二毛的个人博客</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">张二毛的个人博客</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+  </div>
+
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-主页">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>主页</a>
+
+  </li>
+        <li class="menu-item menu-item-关于">
+
+    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-标签">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-分类">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-归档">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
+
+  </li>
+  </ul>
+
+</nav>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="en">
+    <link itemprop="mainEntityOfPage" href="http://ermao7.coding.me/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/20191223-%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/zifeng.jpg">
+      <meta itemprop="name" content="张二毛">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="张二毛的个人博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          数据可视化
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2019-12-23 21:26:16 / Modified: 21:58:21" itemprop="dateCreated datePublished" datetime="2019-12-23T21:26:16+08:00">2019-12-23</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/" itemprop="url" rel="index">
+                    <span itemprop="name">数据分析</span>
+                  </a>
+                </span>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="Symbols count in article">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">Symbols count in article: </span>
+              <span>3.1k</span>
+            </span>
+            <span class="post-meta-item" title="Reading time">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">Reading time &asymp;</span>
+              <span>3 mins.</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>python 所用的作图包<br>from pyecharts import Bar<br>import pyecharts<br>from pyecharts import Bar3D#3D 构图<br>特点:<br>柱状图比较,折线图趋势,饼状图比例,散点图 做二维数组的比较<br>雷达图做思维以上的数据对比</p>
+<a id="more"></a>
+
+<h3 id="柱形图"><a href="#柱形图" class="headerlink" title="柱形图"></a>柱形图</h3><blockquote>
+<p>attr=[“奥迪”,”宝马”,”大众”]#定义值<br>v1 = [10000,2332,2332]#参数<br>bar=Bar(“汽车品牌销售”)#标题<br>bar.add(“韩城”,attr,v2,is_stack=True) 可以叠加添加条柱形图,参数mkar_point=[“average”]平均值,,mkrk_point=[“min”,”max”])#俩个块之间的距离<br>可用函数 sum等</p>
+</blockquote>
+<h3 id="3d画图"><a href="#3d画图" class="headerlink" title="3d画图"></a>3d画图</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">bar3d &#x3D; Bar3D(&quot;3D 柱状图示例&quot;, width&#x3D;1200, height&#x3D;600)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">添加坐标</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">x_axis &#x3D; [</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">    &quot;12a&quot;, &quot;1a&quot;, &quot;2a&quot;, &quot;3a&quot;, &quot;4a&quot;, &quot;5a&quot;, &quot;6a&quot;, &quot;7a&quot;, &quot;8a&quot;, &quot;9a&quot;, &quot;10a&quot;, &quot;11a&quot;,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">    &quot;12p&quot;, &quot;1p&quot;, &quot;2p&quot;, &quot;3p&quot;, &quot;4p&quot;, &quot;5p&quot;, &quot;6p&quot;, &quot;7p&quot;, &quot;8p&quot;, &quot;9p&quot;, &quot;10p&quot;, &quot;11p&quot;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">    ]</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">坐标</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">y_axis &#x3D; [</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">    &quot;Saturday&quot;, &quot;Friday&quot;, &quot;Thursday&quot;, &quot;Wednesday&quot;, &quot;Tuesday&quot;, &quot;Monday&quot;, &quot;Sunday&quot;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">    ]</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">数据</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">data &#x3D; [</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line">    [0, 0, 5], [0, 1, 1], [0, 2, 0], [0, 3, 0], [0, 4, 0], [0, 5, 0],</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line">    [0, 6, 0], [0, 7, 0], [0, 8, 0], [0, 9, 0], [0, 10, 0], [0, 11, 2],</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">15</span></pre></td><td class="code"><pre><span class="line">]</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">16</span></pre></td><td class="code"><pre><span class="line">添加构图的颜色</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">17</span></pre></td><td class="code"><pre><span class="line">range_color &#x3D; [&#39;#313695&#39;, &#39;#4575b4&#39;, &#39;#74add1&#39;, &#39;#abd9e9&#39;, &#39;#e0f3f8&#39;, &#39;#ffffbf&#39;,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">18</span></pre></td><td class="code"><pre><span class="line">               &#39;#fee090&#39;, &#39;#fdae61&#39;, &#39;#f46d43&#39;, &#39;#d73027&#39;, &#39;#a50026&#39;]</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">19</span></pre></td><td class="code"><pre><span class="line">bar3d.add(</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">20</span></pre></td><td class="code"><pre><span class="line">    &quot;&quot;,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">21</span></pre></td><td class="code"><pre><span class="line">    x_axis,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">22</span></pre></td><td class="code"><pre><span class="line">    y_axis,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">23</span></pre></td><td class="code"><pre><span class="line">    [[d[1], d[0], d[2]] for d in data],#遍历数据中的元素然后传递给d</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">24</span></pre></td><td class="code"><pre><span class="line">    is_visualmap&#x3D;True,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">25</span></pre></td><td class="code"><pre><span class="line">    visual_range&#x3D;[0, 20],</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">26</span></pre></td><td class="code"><pre><span class="line">    visual_range_color&#x3D;range_color,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">27</span></pre></td><td class="code"><pre><span class="line">    grid3d_width&#x3D;200,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">28</span></pre></td><td class="code"><pre><span class="line">    grid3d_depth&#x3D;80,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">29</span></pre></td><td class="code"><pre><span class="line">)</span></pre></td></tr></table></figure>
+<h3 id="动态散点图"><a href="#动态散点图" class="headerlink" title="动态散点图"></a>动态散点图</h3><p>可用生成动态网页来观看<br>参数可用列表<br>es=pyecharts.EffectScatter(“动态散点图”)<br>es.add(“销售额度”,v1,v2)<br>es.render()#下载成一个网页图片</p>
+<h3 id="漏斗图"><a href="#漏斗图" class="headerlink" title="漏斗图"></a>漏斗图</h3><blockquote>
+<p>fu=pyecharts.Funnel(“漏斗图”)<br>attr=[“袜子”,”羊毛衫”,”牛仔裤”,”高跟鞋”,”b背包”]<br>fu.add(“商品价格”,attr,v2,is_label_show=True,funnel_sort=”ascending”)#是否显示标签  funnel_sort 翻转排序</p>
+</blockquote>
+<h3 id="仪表盘"><a href="#仪表盘" class="headerlink" title="仪表盘"></a>仪表盘</h3><p>gauge=pyecharts.Gauge(“仪表盘”)<br>gauge.add(“业务指标”,”完成率”,random.randint(4,100))#仪表盘</p>
+<h3 id="饼图"><a href="#饼图" class="headerlink" title="饼图"></a>饼图</h3><p>#饼图<br>attr=[“袜子”,”羊毛衫”,”牛仔裤”]<br>v1=[10,20,70]<br>pie=pyecharts.Pie(“饼图”)<br>pie.add(“占额”,attr,v1,radiu=[20,75],rosetype=”area”)#rosetype 风格</p>
+<h3 id="雷达图"><a href="#雷达图" class="headerlink" title="雷达图"></a>雷达图</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">radar&#x3D;pyecharts.Radar()</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">schema &#x3D; [ </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">    (&quot;销售&quot;, 6500), (&quot;管理&quot;, 16000), (&quot;信息技术&quot;, 30000),</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">    (&quot;客服&quot;, 38000), (&quot;研发&quot;, 52000), (&quot;市场&quot;, 25000)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">]</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">v1 &#x3D; [[4300, 10000, 28000, 35000, 50000, 19000]]</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">v2 &#x3D; [[5000, 14000, 28000, 31000, 42000, 21000]]</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">radar.config(schema)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">radar.add(&quot;预算&quot;,v1,)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">radar.add(&quot;预算&quot;,v2,)</span></pre></td></tr></table></figure>
+<h3 id="关系图"><a href="#关系图" class="headerlink" title="关系图"></a>关系图</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">nodes&#x3D;[</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">    &#123;&quot;name&quot;:&quot;马云&quot;,&quot;money&quot;:&quot;200000&quot;,&quot;symbolSize&quot;:40&#125;,]</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">link&#x3D;[]</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">for i in nodes:</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">    for j in nodes:</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">        link.append(&#123;&quot;source&quot;:i.get(&quot;name&quot;),&quot;target&quot;:j.get(&quot;name&quot;)&#125;)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">graph&#x3D;pyecharts.Graph(&quot;关系图&quot;)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">graph.add(&quot;&quot;,nodes,link,repulsion&#x3D;600)</span></pre></td></tr></table></figure>
+<h3 id="重点图-字体大小"><a href="#重点图-字体大小" class="headerlink" title="重点图 字体大小"></a>重点图 字体大小</h3><blockquote>
+<p>name=[“垃圾”,”清洁干净”,”妈妈喜欢”,”赞”,”真好”,”泡沫多”]<br>alue=[100,20,10,33,6,30]#数据对应上面一个<br>word=pyecharts.WordCloud(width=1200,height=600)<br>word.add(“”,name,value,word_size_range=[20,90])</p>
+</blockquote>
+<h3 id="利用json数据转化饼图"><a href="#利用json数据转化饼图" class="headerlink" title="利用json数据转化饼图"></a>利用json数据转化饼图</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">f&#x3D;open(&quot;pies.json&quot;)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">data&#x3D;json.load(f)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">name &#x3D;data[&#39;name&#39;]</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">value&#x3D;data[&quot;sales&quot;]</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">pie&#x3D;pyecharts.Pie(&quot;&quot;)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">pie.add(&quot;&quot;,name,value)</span></pre></td></tr></table></figure>
+
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/python/" rel="tag"># python</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/20191223-%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%904.html" rel="prev" title="数据分析4">
+      <i class="fa fa-chevron-left"></i> 数据分析4
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/HTML-CSS/20191224-HTML.html" rel="next" title="HTML">
+      HTML <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+  </div>
+
+
+          </div>
+          
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#柱形图"><span class="nav-number">1.</span> <span class="nav-text">柱形图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3d画图"><span class="nav-number">2.</span> <span class="nav-text">3d画图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#动态散点图"><span class="nav-number">3.</span> <span class="nav-text">动态散点图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#漏斗图"><span class="nav-number">4.</span> <span class="nav-text">漏斗图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#仪表盘"><span class="nav-number">5.</span> <span class="nav-text">仪表盘</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#饼图"><span class="nav-number">6.</span> <span class="nav-text">饼图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#雷达图"><span class="nav-number">7.</span> <span class="nav-text">雷达图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#关系图"><span class="nav-number">8.</span> <span class="nav-text">关系图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#重点图-字体大小"><span class="nav-number">9.</span> <span class="nav-text">重点图 字体大小</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#利用json数据转化饼图"><span class="nav-number">10.</span> <span class="nav-text">利用json数据转化饼图</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="张二毛"
+      src="/images/zifeng.jpg">
+  <p class="site-author-name" itemprop="name">张二毛</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives">
+          <span class="site-state-item-count">38</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+        <span class="site-state-item-count">11</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+        <span class="site-state-item-count">15</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/yourname" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;yourname" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:yourname@gmail.com" title="E-Mail → mailto:yourname@gmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://weibo.com/u/5819819285?is_hot=1" title="Weibo → https:&#x2F;&#x2F;weibo.com&#x2F;u&#x2F;5819819285?is_hot&#x3D;1" rel="noopener" target="_blank"><i class="fa fa-fw fa-weibo"></i>Weibo</a>
+      </span>
+  </div>
+
+
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title">
+      <i class="fa fa-fw fa-link"></i>
+      Links
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="http://www.zhihu.com/" title="http:&#x2F;&#x2F;www.zhihu.com" rel="noopener" target="_blank">知乎</a>
+        </li>
+    </ul>
+  </div>
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">张二毛</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    <span title="Symbols count total">48k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="Reading time total">43 mins.</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> v4.0.0
+  </div>
+  <span class="post-meta-divider">|</span>
+  <div class="theme-info">Theme – <a href="https://mist.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> v7.6.0
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  
+  <script color='0,0,255' opacity='0.5' zIndex='-1' count='99' src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script>
+<script src="/js/schemes/muse.js"></script>
+<script src="/js/next-boot.js"></script>
+
+
+
+  
+  <script>
+    (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      bp.src = (curProtocol === 'https') ? 'https://zz.bdstatic.com/linksubmit/push.js' : 'http://push.zhanzhang.baidu.com/push.js';
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
